@@ -1,0 +1,352 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Jennifer Hachigian">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (WinNT; I) [Netscape]">
+   <title>20.1 -- The Tunic -- Belt</title>
+<link REL=StyleSheet HREF="../../style.css" TYPE="text/css">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" vlink="#800080" alink="#0000FF">
+
+<h3>
+The Tunic -- Belt</h3>
+<b>STEP 1</b>: Load <b>torso24.lwo</b> into Modeler (if you did not follow
+the previous tutorial sections and just want to experiment with creating
+“floating” details of geometry, you may load <b>torso24.lwo</b> from the
+CD-ROM).
+<p><b>STEP 2</b>: Go to the layer containing the tunic. Set the display
+type of the Perspective View to “Wireframe Shade.”
+<p><b>STEP 3</b>: Select the three rows of polygons that form the belt.
+Right now they share the points of their borders with the rest of the tunic.
+The tightly spaced points of the top of the belt look fine, but the bottom
+of the belt is noticeably distorted by the looser mesh of the skirt.
+<p><b>STEP 4</b>: Type x to Cut the mesh of the belt out of the layer,
+and then type v to Paste it back into the layer. As long as you do not
+Merge Points, the borders of the belt will remain separated from the borders
+of the cloth. Select these polygons again and assign the Part Name of “Separate
+Mesh” to the belt geometry, to make them easier to select in the future.
+(<b><font color="#CC0000"><a href="Fig001.gif">Figure 1</a></font></b>)
+<p><a href="Fig001.gif"><img SRC="small/s_Fig001.GIF" ALT="Figure 1" NOSAVE BORDER=1 height=159 width=200></a>
+<br><b>Figure 1</b>
+<p>The borders now look better, but this belt looks flat. Happily, it has
+two “rings” of points in the center for us to manipulate.
+<p>
+<hr SIZE=1 WIDTH="100%">
+<blockquote><b>Note</b>: If you had patched the belt region with an eye
+towards polygon efficiency, resulting in one band of polygons instead of
+three…don’t worry. You can easily add two “rings” of points right now with
+either Knife or Bandsaw. You did well to patch with the fewest number of
+polygons that gave you the results that you wanted – it’s always easier
+to add geometry than it is to remove it.</blockquote>
+
+<hr SIZE=1 WIDTH="100%">
+<p><b>STEP 5</b>: Select the two center “rings” of points in the belt.
+Use the Stretch Tool on them vertically to move them closer to the top
+and bottom borders of the belt. (<b><font color="#CC0000"><a href="Fig002.gif">Figure
+2</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig002.gif"><img SRC="small/s_Fig002.GIF" ALT="Figure 2" NOSAVE BORDER=1 height=75 width=200></a>
+<br><b>Figure 2</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig003.gif"><img SRC="small/s_Fig003.GIF" ALT="Figure 3" NOSAVE BORDER=1 height=161 width=200></a>
+<br><b>Figure 3</b></td>
+</tr>
+</table>
+
+<p><b>STEP 6</b>: Use Smooth Scale (<b>Modify > Stretch > More > Smooth
+Scale</b>) to puff these points outwards, giving volume to the belt. A
+Smooth Scale of about 5mm should do it, but use the value that you think
+looks best. (<b><font color="#CC0000"><a href="Fig003.gif">Figure 3</a></font></b>)
+<p>We need a belt buckle and a belt strap. These can be pieces of geometry
+that “float” on top of the belt. They must lie close enough to the belt
+that it looks like part of the belt from all angles…yet they must not intersect
+the belt, or else they will appear to lose their ink lines. This is because
+those edges that qualify as Edges would be buried in the mesh of the belt,
+hidden from view.
+<p>
+<hr SIZE=1 WIDTH="100%">
+<blockquote><b>Tip</b>: When modeling, avoid an intersection of non-transparent
+meshes unless you deliberately want to “hide” an ink line beneath an opaque
+surface.
+<p>If you do “hide” a polygon capable of causing an ink line beneath an
+opaque surface, you cannot be sure that its ink line will be hidden in
+all situations unless Edge Z Scale in Layout is set to 1.
+<p>The default Edge Z Scale value is 0.998, which places ink lines 998/1000ths
+of the distance between the object and the camera. This value of 0.998
+places ink lines slightly “in front” of the object. For example, the ink
+lines of a flat plane 1m from the camera will appear 0.998m from the camera
+(making the ink lines appear 2mm “in front” of the object at that distance).
+This default setting usually makes the ink line look smoother.
+<p>However, the chance of “buried” ink lines appearing on the surface of
+an object increases with the distance of the object from the camera. Keep
+this in mind if you plan to use high Zoom settings on your camera to look
+at distant celshaded objects. If unwanted ink lines appear, try increasing
+the Edge Z Scale to fix the problem.</blockquote>
+
+<hr SIZE=1 WIDTH="100%">
+<p><b>STEP 7</b>: The easiest way to make sure that the new geometry lies
+flush with the belt geometry is to build it from a copy of the belt geometry.
+Deselect everything. Select the polygons of the belt and type c to Copy
+them. Go to an empty layer and type v to Paste them. (<b><font color="#CC0000"><a href="Fig004.gif">Figure
+4</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig004.gif"><img SRC="small/s_Fig004.GIF" ALT="Figure 4" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 4</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig005.gif"><img SRC="small/s_Fig005.GIF" ALT="Figure 5" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 5</b></td>
+</tr>
+</table>
+
+<p><b>STEP 8</b>: Of these copied belt polygons, you only need the polygons
+that surround the belt buckle area. Select everything save for the six
+SubPatches that surround the belt buckle; type x to Cut them out, leaving
+the six SubPatches behind. (<b><font color="#CC0000"><a href="Fig005.gif">Figure
+5</a></font></b>)
+<p><b>STEP 9</b>: We’re going to Extrude these polygons into a belt strap.
+The current SubPatches will form the “back” of the belt strap, so they
+ought to face the belt. Type f to Flip them (<b>Detail > Polygons > Flip</b>)
+so that their normals face the belt, as shown in the upper panel of <b><font color="#CC0000"><a href="Fig006.gif">Figure
+6</a></font></b>.
+<p><b>STEP 10</b>: Type Shift-e to summon the Extrude tool (<b>Multiply
+> Extend > Extrude</b>). In the Top View, left-click on the polygons, hold
+down the Ctrl key to restrict movement to one axis, and drag downwards
+slightly. It should look like the lower panel of <b><font color="#CC0000"><a href="Fig006.gif">Figure
+6</a></font></b>.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig006.gif"><img SRC="small/s_Fig006.GIF" ALT="Figure 6" NOSAVE BORDER=1 height=139 width=200></a>
+<br><b>Figure 6</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig007.gif"><img SRC="small/s_Fig007.GIF" ALT="Figure 7" NOSAVE BORDER=1 height=154 width=200></a>
+<br><b>Figure 7</b></td>
+</tr>
+</table>
+
+<p><b>STEP 11</b>: This belt strap needs a pointy end. Select the three
+rightmost SubPatches at the end; type Shift-f to bring up Smooth Shift.
+Right-click on the selected geometry once to create a slight Smooth Shift;
+Move these polygons to the right in the Back View to grow the end of the
+strap. (<b><font color="#CC0000"><a href="Fig007.gif">Figure 7</a></font></b>)
+<p><b>STEP 12</b>: Use the Stretch tool on these selected polygons to give
+the end of this belt strap a point. (<b><font color="#CC0000"><a href="Fig008.gif">Figure
+8</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig008.gif"><img SRC="small/s_Fig008.GIF" ALT="Figure 8" NOSAVE BORDER=1 height=122 width=200></a>
+<br><b>Figure 8</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig009.gif"><img SRC="small/s_Fig009.GIF" ALT="Figure 9" NOSAVE BORDER=1 height=184 width=200></a>
+<br><b>Figure 9</b></td>
+</tr>
+</table>
+
+<p><b>STEP 13</b>: Almost there, but this belt tip has an oddly “pinched”
+end. Zoom in on the belt tip. Select the central four points of the belt
+tip; in the Right View move them to the right until the SubPatch “lines”
+that run through them look vertically straight. This should eliminate any
+unwanted curve in the edge of the belt tip. (<b><font color="#CC0000"><a href="Fig009.gif">Figure
+9</a></font></b>)
+<p>Now for the buckle. We created the belt strap from a copy of the belt
+geometry so that the strap would lie flush with the belt; now let’s create
+a buckle from the belt geometry so that it, too, will lie flush with the
+geometry underneath it.
+<p><b>STEP 14</b>: Select the six polygons from the “front side” of the
+belt strap; Copy and Paste them to an empty layer. Use the Knife tool to
+make two slices in this geometry; one on each side of the belt in the model
+sheet. Don’t worry about making the new SubPatches line up with the ink
+lines of the model sheet; worry about making the new <i>points</i> line
+up with the ink lines of the model sheet. (<b><font color="#CC0000"><a href="Fig010.gif">Figure
+10</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig010.gif"><img SRC="small/s_Fig010.GIF" ALT="Figure 10" NOSAVE BORDER=1 height=78 width=200></a>
+<br><b>Figure 10</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig011.gif"><img SRC="small/s_Fig011.GIF" ALT="Figure 11" NOSAVE BORDER=1 height=67 width=200></a>
+<br><b>Figure 11</b></td>
+</tr>
+</table>
+
+<p><b>STEP 15</b>: Select the outermost six SubPatches and delete them.
+You now have SubPatch geometry that surrounds the belt buckle on the model
+sheet.
+<p><b>STEP 16</b>: Select the six existing SubPatches. Activate the Smooth
+Shift tool and right-click on them once to give them the slightest of Smooth
+Shifts. Then use the Stretch tool in the Back View to shrink the points
+of the still-selected polygons inwards. Stop when the points form a border
+that matches the thickness of the belt buckle in the model sheet. (<b><font color="#CC0000"><a href="Fig011.gif">Figure
+11</a></font></b>)
+<p><b>STEP 17</b>: Cut the selected inner polygons, leaving a border of
+SubPatches behind. You now have a two-dimensional belt buckle. Flip these
+polygons to face inwards, towards the belt strap. Then, in the Top View,
+Extrude the geometry into a three-dimensional belt buckle. (<b><font color="#CC0000"><a href="Fig012.gif">Figure
+12</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig012.gif"><img SRC="small/s_Fig012.GIF" ALT="Figure 12" NOSAVE BORDER=1 height=125 width=200></a>
+<br><b>Figure 12</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig013.gif"><img SRC="small/s_Fig013.GIF" ALT="Figure 13" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 13</b></td>
+</tr>
+</table>
+
+<p><b>STEP 18</b>: Assign a yellow surface named “Kara Belt Buckle” to
+this three-dimensional belt buckle.
+<p><b>STEP 19</b>: Use the Stretch tool to make the belt a little taller,
+so that it looks more like a belt buckle and less like something that’s
+sitting on top of the belt strap geometry. (You don’t want to let the audience
+in on the trick, do you?) (<b><font color="#CC0000"><a href="Fig013.gif">Figure
+13</a></font></b>)
+<p>Now you have an aesthetic choice to make on the shape of this belt.
+Do you want to leave it “crimped” in the corners, or do you want it to
+be simple all around?
+<p>If you want to simplify this shape, follow the next step.
+<p><b>STEP 20</b>: To see what is causing the “crimp” in the corners, select
+the points that form the inside of one of the sides of the belt. Notice
+that the topmost and bottommost pairs of points are pushed in towards the
+back. Moving these pairs towards the negative Z axis will straighten out
+the crimp, as the points will then line up with the rest of the points
+that form the inside of the side of the belt. This in turn will straighten
+out the SubPatch lines currently running through those points. These lines
+don’t have to be perfectly straight – see if you can up the inside curve
+with its outer counterpart in the Right View. Then do the same for the
+opposite side. (<b><font color="#CC0000"><a href="Fig014.gif">Figure 14</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig014.gif"><img SRC="small/s_Fig014.GIF" ALT="Figure 14" NOSAVE BORDER=1 height=221 width=200></a>
+<br><b>Figure 14</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig015.gif"><img SRC="small/s_Fig015.GIF" ALT="Figure 15" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 15</b></td>
+</tr>
+</table>
+
+<p>So how does this geometry “line up” with the geometry of the belt strap?
+Make the belt strap a background layer and check the Perspective View.
+Are the black lines of the boot strap in the background layer intersecting
+with the belt buckle? If so, you need to move those intersecting areas
+of the belt buckle out of the way – otherwise the Edges for the belt buckle
+and the belt strap will “disappear” in those areas.
+<p><b>STEP 21</b>: If the buckle appears to be intersecting with the belt
+strap, Move the offending points of the belt buckle in the direction of
+the negative Z axis in the Top View. Don’t move the points one at a time
+– you’ll risk distorting the mesh. Instead, select the points that form
+an entire side or center of the belt buckle in the Top View and move them
+as a group.
+<p><b>STEP 22</b>: One last detail. Go into a new empty layer and make
+the belt buckle a background layer. Type Shift-x to activate the Box tool.
+Draw a box about as thick as the top of the belt. Give it three sections
+along the X axis.&nbsp; Place it in the vertical center of the buckle,
+just in front of the buckle, on the side shown in <b><font color="#CC0000"><a href="Fig015.gif">Figure
+15</a></font></b>.
+<p><b>STEP 23</b>: Hit the Tab key to turn this box into SubPatches. Move
+it close to the geometry of the belt buckle (as close as possible without
+intersecting the geometry).
+<p><b>STEP 24</b>: Select the rightmost SubPatch of the box. Hold down
+the Shift key so that you can make the belt strap an additional foreground
+layer. Move the selected SubPatch towards the positive Z axis in the Top
+View so that it touches, but does not intersect, the “lowest” curve of
+the belt strap. It should look like <b><font color="#CC0000"><a href="Fig016.gif">Figure
+16</a></font></b>.
+<p><a href="Fig016.gif"><img SRC="small/s_Fig016.GIF" ALT="Figure 16" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 16</b>
+<p>
+<hr SIZE=1 WIDTH="100%">
+<blockquote><b>Note</b>: You must not let geometry intersect unless you
+<i>want</i>
+to lose your ink line at the “seam” where the geometry intersects.</blockquote>
+
+<hr SIZE=1 WIDTH="100%">
+<p><b>STEP 25</b>: Make the box the only active layer. Make sure that its
+surface geometry has the same surface name as the rest of the belt buckle
+(“Kara Belt Buckle”).
+<p><b>STEP 26</b>: It also needs to have the same weight map as the belt
+strap and belt buckle – “Waist.” The belt strap and belt buckle were derived
+from geometry that already had “Waist” weight values, so they already have
+“Waist” weight map values. You created this little box from scratch, though,
+so you need to assign it weight map values. Deselect everything. Use <b>Map
+> General > More > Set Vertex Map Value</b> to assign this SubPatch values
+of 100% under the “Waist” weight map.
+<p><b>STEP 27</b>: Cut and Paste the geometry of this box out of its layer,
+and into the belt buckle layer.
+<p>The non-pointed end of the belt strap, as it stands now, will generate
+a visible ink line. We don’t want this ink line – it doesn’t exist anywhere
+on the model sheet, and it would look “odd” as part of a drawing of a belt.
+We have a few ways of “hiding” this unwanted ink line.
+<p>The first way would be to bury this end of the strap in the mesh of
+the belt – but that leaves no guarantee that the ink line won’t show up
+when filmed with high Zoom lenses at a distance.
+<p>The second way is to “line up” the ink line generated by this edge with
+the ink line of the belt, in hopes that they will appear to be one and
+the same when rendered. This will leave an ink line consistent at all distances…but
+with no guarantee that an audience won’t “figure it out” when seen up-close.
+<p>The third way makes the belt strap part of the belt itself. Because
+the back of the belt strap was made from copies of the front of the belt,
+its points should line up perfectly. Making the belt strap part of the
+belt, then, is easier than you might think.
+<p><b>STEP 28</b>: Make the tunic layer the active layer. Select the polygons
+of the belt. Cut the belt out of the tunic layer, and Paste its geometry
+into an empty layer.
+<p><b>STEP 29</b>: Make room for the belt strap! Select the three polygons
+shown in <b><font color="#CC0000"><a href="Fig017.gif">Figure 17</a></font></b>
+and Cut them out.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig017.gif"><img SRC="small/s_Fig017.GIF" ALT="Figure 17" NOSAVE BORDER=1 height=73 width=200></a>
+<br><b>Figure 17</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig018.gif"><img SRC="small/s_Fig018.GIF" ALT="Figure 18" NOSAVE BORDER=1 height=79 width=200></a>
+<br><b>Figure 18</b></td>
+</tr>
+</table>
+
+<p><b>STEP 30</b>: Go to the belt strap layer. Select the three polygons
+on the back of the belt strap that correspond to the polygons you just
+Cut in the last step. Cut them out. (<b><font color="#CC0000"><a href="Fig018.gif">Figure
+18</a></font></b>)
+<p><b>STEP 31</b>: We’re going to use Merge Points to get this belt strap
+to merge flush with the rest of the belt, but we don’t want to merge every
+single overlapping point. Some of the base points of the belt tip also
+share the same XYZ coordinates as some of the points on the belt. We need
+to move these points out of harm’s way. Select the SubPatches that form
+the belt tip, place the mouse pointer in the center of the belt in the
+Top View, and use the Rotate tool to Rotate these polygons forwards slightly
+– just enough so that their points no longer overlap those of the belt.
+(<b><font color="#CC0000"><a href="Fig019.gif">Figure 19</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig019.gif"><img SRC="small/s_Fig019.GIF" ALT="Figure 19" NOSAVE BORDER=1 height=55 width=200></a>
+<br><b>Figure 19</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig020.gif"><img SRC="small/s_Fig020.GIF" ALT="Figure 20" NOSAVE BORDER=1 height=141 width=200></a>
+<br><b>Figure 20</b></td>
+</tr>
+</table>
+
+<p><b>STEP 32</b>: Deselect everything. Cut and paste the belt strap layer
+into the belt layer. Type m to Merge their points. It should look like
+<b><font color="#CC0000"><a href="Fig020.gif">Figure
+20</a></font></b>. (If not, use Weld to “sew” any visible seams shut).
+<p><b>STEP 33</b>: Cut and Paste the geometry of the belt and buckle layers
+into the tunic layer. It should look like <b><font color="#CC0000"><a href="Fig021.gif">Figure
+21</a></font></b>.
+<p><a href="Fig021.gif"><img SRC="small/s_Fig021.GIF" ALT="Figure 21" NOSAVE BORDER=1 height=83 width=200></a>
+<br><b>Figure 21</b>
+<p><b>STEP 34</b>: Save this object as <b>torso26.lwo</b>.
+<p><a href="../../contents.htm">Table of Contents</a>
+</body>
+</html>

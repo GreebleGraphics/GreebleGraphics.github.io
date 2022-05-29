@@ -1,0 +1,75 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (WinNT; I) [Netscape]">
+   <title>About Cel Shading</title>
+<link REL=StyleSheet HREF="../style.css" TYPE="text/css">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" vlink="#800080" alink="#0000FF">
+
+<h3>
+About Cel Shading</h3>
+Edges and the Super Cel Shader, while essential tools, cannot make <i>any</i>
+model look hand-drawn.
+<p>Cartoonists stylize reality, rendering only those details considered
+important for the overall design of the cartoon. Mickey Mouse has no fur
+or whiskers. Snoopy doesn't have claws or discernable nostrils. Disney
+females often lack visible fingernails.
+<p>Edges may "ink" your models, but it doesn't "think" about design. A
+literal-minded "inker," Edges will trace a line along those edges of polygons
+that qualify as "ink lines" in a model. The four key types of Edges follow
+these rules:
+<ol>
+<li>
+<b>Silhouette Edges</b> - appear at the edge shared by two single-sided
+polygons when the normal of one of those polygons faces the camera, and
+the normal of the other polygon faces away from the camera. The edges that
+qualify as Silhouette Edges thus change with the angle of the model to
+the camera. An edge must be shared by two polygons to qualify as a Silhouette
+Edge - Silhouette Edges will never appear on a model that consists of a
+single polygon. Double-sided surfaces face the camera at all times, so
+Silhouette Edges will never appear on them.</li>
+
+<li>
+<b>Unshared Edges</b> - appear on edges not shared by any other polygon.
+Unshared Edges, when checked, will always appear on a model that consists
+of a single polygon. For non-SubPatch models, selecting an area of geometry
+and then applying a "Cut and Paste" operation will create an Unshared Edge
+at the border of the selection in your object. You might use this trick
+to get Edges to help you describe the panels in a spaceship, for example.
+(Any overlapping points of a SubPatch model will get "merged" into a shared
+edge in Layout, so the "Cut and Paste" trick will only help you sharpen
+edges in your model - it will not give you an "Unshared Edge" in Layout).</li>
+
+<li>
+<b>Sharp Creases</b> - might also be called "UnSmoothed Edges." Whether
+or not a given edge qualifies as a "Sharp Crease" depends on the Smoothing
+Angle of the surface to which that edge belongs. Lowering the Smoothing
+Angle of a surface will increase the number of edges traced; increasing
+the Smoothing Angle will decrease the number of "Sharp Crease" edges. If
+the "Smoothing" option is left unchecked in the Surface Editor, most (if
+not all) of the polygon edges in your model will qualify as "Sharp Creases."
+Their territory sometimes overlaps with that of Silhouette Edges, as the
+edges of polygons that turn away from the camera might qualify as a "Sharp
+Crease." This type of Edge does not care whether the polygons have double-sided
+surfaces or not, so you can often use them to put a "Silhouette Edge" on
+a double-sided surface.</li>
+
+<li>
+<b>Surface Borders</b> - this type of Edge will appear at the edge shared
+by two polygons when said polygons have different surface names. The polygons
+might have the exact same texture parameters, but "Surface Borders" will
+not care. If the surface names differ, then the polygons will have an ink
+line appear at their shared edge (unless the artist leaves "Surface Borders"
+unchecked).</li>
+</ol>
+Layout also offers "Other Edges" (everything not covered by the four key
+types of edges above) and "Particle/Line Thickness" (which covers two-point
+and one-point polygons, both ignored by the other Edge options).
+<p>Fortunately for us, Edges <i>consistently</i> follow the above rules.
+The modeler, then, can both predict and control where the ink lines will
+appear.
+<p><a href="../contents.htm">Table of Contents</a>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Jennifer Hachigian">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (WinNT; I) [Netscape]">
+   <title>33.1 -- The Head -- Bangs</title>
+<link REL=StyleSheet HREF="../../style.css" TYPE="text/css">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" vlink="#800080" alink="#0000FF">
+
+<h3>
+The Head – Bangs</h3>
+In real life, a hairline has an indistinct border – a fade-in from a thinly
+covered area of hair to a thick mass of hair. Some character designers
+represent this detail by leaving the character without a clearly defined
+horizontal ink line at the hairline – instead using vertical lines (representing
+the direction of the hair). Without a clear ink line bordering the hair
+and face paints, one gets the overall impression of a soft, natural hairline.
+<p>We can recreate this effect by deliberately burying the ends of the
+hair tufts into the border between the hair and the face. Not only will
+the ink lines defining the ends of the tufts get buried, but the hair tufts
+will block the Surface Border edge of the hairline from view.
+<p>When modeling this part of the hair, focus on the overall shape of the
+hairstyle, rather than the actual number of tufts in the model sheet.In
+the Back View, this elf-girl has bangs in the rough form of a crown (or
+the visor of Athena’s helmet; take your pick). Make the individual tufts
+as thick or as thin as you like, but try to keep the mass of the bangs
+in the shape of a crown.
+<p><b>STEP 1</b>: Load <b>head11.lwo</b> into Modeler. (If you just want
+to practice modeling bangs, you may load <b>head11.lwo</b> from the CD-ROM).
+<p><b>STEP 2</b>: If we are going to obscure the hairline with hair tufts,
+we could use a guideline for where the hair tufts should lie. Select all
+of the points that border the hairline from ear to ear, Copy and Paste
+them to an empty layer. In the Back View, select them from left to right
+and type Ctrl-p to make a spline out of them. We now have a guideline that
+traces the hairline of the head. (<b><font color="#CC0000"><a href="Fig001.gif">Figure
+1</a></font></b>)
+<p><a href="Fig001.gif"><img SRC="small/s_Fig001.GIF" ALT="Figure 1" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 1</b>
+<p><b>STEP 3</b>: Go to a new empty layer, with this spline in the background.
+Create a Cone aligned with the Y axis, with three sides and four segments.
+Use these Numeric settings:
+<pre><font face="Courier New,Courier">&nbsp;&nbsp;&nbsp; Axis: Y
+&nbsp;&nbsp; Sides: 3
+Segments: 4
+&nbsp; Bottom: 1.516m
+&nbsp;&nbsp;&nbsp;&nbsp; Top: 1.6713m
+Center X: 0m
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Y: 1.5937m
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Z: -125.0497mm
+Radius X: 18.5mm
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Y: 77.5mm
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Z: 18.5mm</font></pre>
+<b>STEP 4</b>: In the Right View, Rotate this cone 180 degrees so it points
+downwards. In the Top View, rotate it until its cross-section points towards
+the negative side of the Z axis. In the Back View, Move it until its widest
+end touches the top of the central tuft of hair in the model sheet. In
+the Right View, Move it until its narrowest end touches the tip of the
+central tuft of hair in the model sheet. It should look like <b><font color="#CC0000"><a href="Fig002.gif">Figure
+2</a></font></b>.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig002.gif"><img SRC="small/s_Fig002.GIF" ALT="Figure 2" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 2</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig003.gif"><img SRC="small/s_Fig003.GIF" ALT="Figure 3" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 3</b></td>
+</tr>
+</table>
+
+<p><b>STEP 5</b>: Knife this geometry slightly above the tip, to keep the
+tip pointed when converted to SubPatch surfaces. Then hit the Tab key to
+convert everything into SubPatch surfaces.
+<p><b>STEP 6</b>: Select the three uppermost sections of this SubPatch
+cage above the tip, and Smooth Scale them outwards until they have the
+thickness of the hair tufts in the model sheet. (By not Smooth Scaling
+the tip, you maintain the sharp point of the tip). A Smooth Scale of about
+5mm should do it. It should look like <b><font color="#CC0000"><a href="Fig003.gif">Figure
+3</a></font></b>.
+<p><b>STEP 7</b>: Type [ to activate the Shear tool (<b>Modify > Move >
+More > Shear</b>). In the Back View, right-click on the top of this geometry
+and drag out the falloff triangle to the bottom of this geometry. Tap the
+“up” arrow key on your keyboard until the right curve of the triangle best
+matches the curve of the central hair tuft in the model sheet. Then left-click
+and drag to the right to curve the geometry into the shape shown in <b><font color="#CC0000"><a href="Fig004.gif">Figure
+4</a></font></b>.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig004.gif"><img SRC="small/s_Fig004.GIF" ALT="Figure 4" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 4</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig005.gif"><img SRC="small/s_Fig005.GIF" ALT="Figure 5" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 5</b></td>
+</tr>
+</table>
+
+<p><b>STEP 8</b>: Leave the Shear tool active. Tap the “right” arrow key
+on your keyboard until the leftmost curve of the falloff triangle in the
+Right View best matches the curve of the hair tufts in the Right View.
+Then, in the Right View, left-click and drag on the geometry until it bows
+outwards into the shape shown in <b><font color="#CC0000"><a href="Fig005.gif">Figure
+5</a></font></b>.
+<p><b>STEP 9</b>: Select the topmost SubPatch surface. Activate the Smooth
+Shift tool and right-click on the selected geometry. In the Right View,
+rotate this SubPatch surface to the right until its points form the top
+of an arch, as shown in <b><font color="#CC0000"><a href="Fig006.gif">Figure
+6</a></font></b>.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig006.gif"><img SRC="small/s_Fig006.GIF" ALT="Figure 6" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 6</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig007.gif"><img SRC="small/s_Fig007.GIF" ALT="Figure 7" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 7</b></td>
+</tr>
+</table>
+
+<p><b>STEP 10</b>: Smooth Shift the selected polygon again, and use both
+the Rotate and Move tools to get it to touch the spline guide in the background.
+<p><b>STEP 11</b>: Cut the selected SubPatch surface out of the geometry.
+The base of the hair tuft should intersect the spline guide in the background
+(if not, move the points of the hair base until it does). Assign the existing
+surface name of “Kara Hair” to the entire geometry. It should look like
+<b><font color="#CC0000"><a href="Fig007.gif">Figure
+7</a></font></b>.
+<p>The end of this hair tuft qualifies as an Unshared Edge. As long as
+the Unshared Edges box is left unchecked in Layout, we won’t have to worry
+about horizontal ink lines showing up on the face of the elf girl in the
+event of an Edge Z Scale problem.
+<p>
+<hr SIZE=1 WIDTH="100%">
+<blockquote><b>Note</b>: Don’t fret about the loss of an ink line on all
+of the “Separate Mesh” polygons (eye socket, eyebrow, glove trim, etc)
+– they actually qualify as Surface Border Edges in Layout. For SubPatch
+geometry, overlapping points get merged after subdivision in Layout.</blockquote>
+
+<hr SIZE=1 WIDTH="100%">
+<p><b>STEP 12</b>: For future convenience, select the three SubPatch surfaces
+at the base of this hair tuft and assign the part name of “Kara Bangs (Base)”
+to them.
+<p><b>STEP 13</b>: If you wish, select the geometry above the tip and Smooth
+Scale them outwards slightly to “puff out” the thickness of the hair tuft.
+(If you choose to puff out the hair tip as well, you will lose the sharp
+point of the hair tip). It will look like <b><font color="#CC0000"><a href="Fig008.gif">Figure
+8</a></font></b>.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig008.gif"><img SRC="small/s_Fig008.GIF" ALT="Figure 8" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 8</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig009.gif"><img SRC="small/s_Fig009.GIF" ALT="Figure 9" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 9</b></td>
+</tr>
+</table>
+
+<p><b>STEP 14</b>: The model sheet shows pairs of hair tufts. Select all
+geometry. Copy and Paste it into the same layer; move and rotate the selected
+original to the side. Make sure that it, too, intersects the spline guide
+for the hairline in the background layer. Use the Size tool to shrink it
+slightly. Then deselect the tip of the geometry, and use a negative Smooth
+Scale (about –5mm or –6mm) to thin the shape of the hair tuft. It should
+look like <b><font color="#CC0000"><a href="Fig009.gif">Figure 9</a></font></b>.
+(Remember that the more the two tufts intersect, the less of an ink line
+that you will see between them. With that in mind, pick the style you like
+best).
+<p><b>STEP 15</b>: Select all geometry. Copy and Paste it into the same
+layer, then Move, Rotate, and Size the original until it looks like <b><font color="#CC0000"><a href="Fig010.gif">Figure
+10</a></font></b>. Make sure that the base of the selected geometry intersects
+the spline guide in the background – you want it to intersect the hairline
+of the head in the future.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig010.gif"><img SRC="small/s_Fig010.GIF" ALT="Figure 10" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 10</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig011.gif"><img SRC="small/s_Fig011.GIF" ALT="Figure 11" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 11</b></td>
+</tr>
+</table>
+
+<p><b>STEP 16</b>: Repeat the last step until you have hair tufts covering
+the entire side of the head. . When finished, it should look something
+like
+<b><font color="#CC0000"><a href="Fig011.gif">Figure 11</a></font></b>.
+Make sure that the base of every tuft intersects the spline guide in the
+background, as though you were threading them on a string. For now, worry
+about how the base of each hair tuft looks – you will tweak the tips in
+the next step.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig012.gif"><img SRC="small/s_Fig012.GIF" ALT="Figure 12" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 12</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig013.gif"><img SRC="small/s_Fig013.GIF" ALT="Figure 13" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 13</b></td>
+</tr>
+</table>
+
+<p><b>STEP 17</b>: Select the outermost pair of hair tufts (Tip: select
+their tips in the Back View, then type ] to Select Connected geometry).
+Deselect their base polygons, so that they will keep intersecting with
+the spline guide no matter what we do to the rest of the geometry. (<b><font color="#CC0000"><a href="Fig012.gif">Figure
+12</a></font></b>) (Tip: if you can’t reach the base polygons easily, use
+the Polygon Statistics panel to deselect all geometry that falls under
+the part name of “Kara Bangs (Base)”). Use the Rotate,&nbsp; Move and Stretch
+tools to both lengthen and spread these hair tufts away from the face,
+so that they look like
+<b><font color="#CC0000"><a href="Fig013.gif">Figure
+13</a></font></b>.
+<p><b>STEP 18</b>: Repeat the step for the other hair tufts, until they
+look like
+<b><font color="#CC0000"><a href="Fig014.gif">Figure 14</a></font></b>.
+Make sure that the non-base sections of the hair tufts form a nice arc
+in the Top View.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig014.gif"><img SRC="small/s_Fig014.GIF" ALT="Figure 14" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 14</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig015.gif"><img SRC="small/s_Fig015.GIF" ALT="Figure 15" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 15</b></td>
+</tr>
+</table>
+
+<p><b>STEP 19</b>: Let’s extend some of that arc to the front view. In
+the Top View, select all of the base sections of the hair tufts; type =
+to Hide all unselected geometry. Then, in the Top View, select all of the
+points that lie on the borders between the base geometry and the (hidden)
+tuft geometry – the points at the apex of each hair tuft. With those points
+still selected, type the backslash key (“\”) to Unhide all hidden geometry.
+<p><b>STEP 20</b>: Activate the Shear tool, and (in the Top and Right View),
+draw the falloff shape from end to end of those selected points that you
+want to raise into a more arc shape. Tap the right arrow key on your keyboard
+to choose the shape whose upper edge best matches the arc of the hair in
+the Back View. Then, in the Back View, left-click and drag up to push the
+points into more of an arc. (You might want to have the display type of
+the Back View set to Smooth Shade for a better idea of the shape of the
+hair in the Back View). (<b><font color="#CC0000"><a href="Fig015.gif">Figure
+15</a></font></b>)
+<p>
+<hr SIZE=1 WIDTH="100%">
+<blockquote><b>Note</b>: “Shear” is basically the Move tool with falloff.
+With this tool, you can move entire groups of points into soft, rounded
+shapes more quickly than you could by moving them point-by-point with the
+Move tool.
+<p>Always use the fastest tool that gives you the results that you want.</blockquote>
+
+<hr SIZE=1 WIDTH="100%">
+<p><b>STEP 21</b>: Use a copy of the two outermost hair tufts to add two
+more hair tufts, as seen in <b><font color="#CC0000"><a href="Fig016.gif">Figure
+16</a></font></b>. Rotate, Stretch and Move it until it looks “right” to
+you. You may want to make the head geometry an additional foreground layer,
+so that you can make sure the base of these new hair tufts intersect the
+head at the hairline.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig016.gif"><img SRC="small/s_Fig016.GIF" ALT="Figure 16" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 16</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig017.gif"><img SRC="small/s_Fig017.GIF" ALT="Figure 17" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 17</b></td>
+</tr>
+</table>
+
+<p><b>STEP 22</b>:&nbsp; Use a copy of the hair tufts you created in the
+last step to create the hair tuft that hangs down in front of the ear,
+as shown in <b><font color="#CC0000"><a href="Fig017.gif">Figure 17</a></font></b>.
+<p><a href="Fig018.gif"><img SRC="small/s_Fig018.GIF" ALT="Figure 18" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 18</b>
+<p><b>STEP 23</b>: If any of the the hair tufts you created in previous
+steps intersect with these new hair tufts, select the non-base sections
+of those tufts and Shear them out of the way in the Back View. (<b><font color="#CC0000"><a href="Fig018.gif">Figure
+18</a></font></b>)
+<p><b>STEP 24</b>: Deselect everything. In the Top View, select all of
+the outermost tufts that do not appear to have a counterpart on the other
+side of the X axis. Type Shift-v and Mirror these tufts across 0m on the
+X axis. Leave Merge Points unchecked (the chances of points overlapping
+here are slim, but you never know). (<b><font color="#CC0000"><a href="Fig019.gif">Figure
+19</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig019.gif"><img SRC="small/s_Fig019.GIF" ALT="Figure 19" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 19</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig020.gif"><img SRC="small/s_Fig020.GIF" ALT="Figure 20" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 20</b></td>
+</tr>
+</table>
+
+<p><b>STEP 25</b>: Deselect everything. Cut and Paste all the bangs geometry
+out of this layer and into the head layer. It should look like <b><font color="#CC0000"><a href="Fig020.gif">Figure
+20</a></font></b>.
+<p><b>STEP 26</b>: Save this object as <b>head12.lwo</b>.
+<p><a href="../../contents.htm">Table of Contents</a>
+</body>
+</html>

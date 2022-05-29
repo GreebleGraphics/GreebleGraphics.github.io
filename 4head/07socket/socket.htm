@@ -1,0 +1,121 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Jennifer Hachigian">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (WinNT; I) [Netscape]">
+   <title>28.1 -- The Head -- Eye Socket</title>
+<link REL=StyleSheet HREF="../../style.css" TYPE="text/css">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" vlink="#800080" alink="#0000FF">
+
+<h3>
+The Head – Detailing Stage 2 (Eye Socket)</h3>
+We will use large spheres for the eyes later in this chapter, which presents
+two potential problems.
+<p>First, the curve of the eye holes in this head object might not perfectly
+follow the curve of a sphere, leaving “gaps” around the eyes. If the camera
+got close enough to see these gaps in the eyes, the audience would suspect
+the true nature of the elf girl – an empty shell of polygons occupying
+three-dimensional space. We must somehow block the audiences’ view of the
+interior.
+<p>Second, we must also uphold the illusion of a cel. In a cel, the paint
+of the eyes would completely fill in the ink lines defining the eyes. We
+would see no “gaps” between the ink lines and the paint. Whatever we use
+to block the gaps around the eyes must look like ink.
+<p>Edges can’t help us here. Whatever we use to block the holes of the
+eye will intersect with the mesh of the eyeballs – burying their Edges
+within each other.
+<p>But…
+<p>…nothing says we can’t “paint” the eye sockets with the exact same color
+as the ink lines.
+<p><b>STEP 1</b>: Load <b>head06.lwo</b> into Modeler. (If you did not
+follow the steps in the previous section and just want SubPatch tweaking
+and detailing experience, you may load <b>head06.lwo</b> from the CD-ROM).
+<p><b>STEP 2</b>:&nbsp; Zoom in on the eye region.
+<p>The softening effect of the SubPatches have caused these points to pull
+in, slightly. The rim of the eye lies slightly within the ink line of the
+eye on the model sheet.
+<p><b>STEP 3</b>: Select the ten points that belong to the “Kara Eye” point
+group (the ten points that border the rim of the eye).
+<p><b>STEP 4</b>:&nbsp; Use Size, then Stretch, then (if necessary) Drag
+to move these points until the SubPatch lines that run through them follow
+the ink line of the eye. Turn off SubPatches and use the Drag tool to “untwist”
+any geometry that might have become distorted. For example, if the outermost
+corner of the eye has been pushed into the face (as shown in the middle
+row of panels in <b><font color="#CC0000"><a href="Fig001.gif">Figure 1</a></font></b>),
+move the points of the side of the face closest to the corner of the eye
+back, so that the outermost corner of the eye no longer forms an unwanted
+“dent” in that area of the face. (<b><font color="#CC0000"><a href="Fig001.gif">Figure
+1</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig001.gif"><img SRC="small/s_Fig001.GIF" ALT="Figure 1" NOSAVE BORDER=1 height=235 width=200></a>
+<br><b>Figure 1</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig002.jpg"><img SRC="small/s_Fig002.GIF" ALT="Figure 2" NOSAVE BORDER=1 height=73 width=200></a>
+<br><b>Figure 2</b></td>
+</tr>
+</table>
+
+<p><b>STEP 5</b>: Turn SubPatches back on and check the rim of the eye
+again. You might have to slightly tweak one or two points with the Drag
+tool. (<b><font color="#CC0000"><a href="Fig002.gif">Figure 2</a></font></b>)
+<p><b>STEP 6</b>: Turn off SubPatches. Select the ten points that rim the
+eye in a clockwise order and type p to create a polygon. Give this polygon
+the surface name of “Kara Eye Socket,” and make it a neutral grey for now.
+<p><b>STEP 7</b>: With this ten-point polygon selected, type Shift-f to
+activate the Smooth Shift tool. Right-click on this polygon once to generate
+a border of geometry, then type Shift-h to activate the Size tool. With
+the original ten-point polygon still selected, shrink it down into a single
+point. (<b><font color="#CC0000"><a href="Fig003.gif">Figure 3</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig003.jpg"><img SRC="small/s_Fig003.GIF" ALT="Figure 3" NOSAVE BORDER=1 height=162 width=200></a>
+<br><b>Figure 3</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig004.jpg"><img SRC="small/s_Fig004.GIF" ALT="Figure 4" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 4</b></td>
+</tr>
+</table>
+
+<p><b>STEP 8</b>: With the original ten-point polygon still selected, type
+x to Cut it out. You are left with ten points that look like a single point.
+Select these ten points and type Ctrl-w to Weld them into a single point.
+Then select this point and drag it back into the head, until you have a
+cone that looks like <b><font color="#CC0000"><a href="Fig004.gif">Figure
+4</a></font></b>.
+<p><b>STEP 9</b>:&nbsp; Deselect everything. Hit the Tab key to turn everything
+into SubPatches. Yikes – the tip of the cone seems to be inhaling the entire
+eye socket into the head.
+<p><b>STEP 10</b>: No problem. Select all of the “Kara Eye Socket” polygons.
+Type x and then v to Cut and then Paste them back into the layer. Now that
+the SubPatch lines have been broken at the rim of the eye, the eye area
+has regained its original form. Select the “Kara Eye Socket” polygons again
+and assign the Part Name of “Separate Mesh” to them, to make them easy
+to select in the future. (<b><font color="#CC0000"><a href="Fig005.gif">Figure
+5</a></font></b>)
+<p><a href="Fig005.jpg"><img SRC="small/s_Fig005.GIF" ALT="Figure 5" NOSAVE BORDER=1 height=94 width=200></a>
+<br><b>Figure 5</b>
+<p>
+<hr SIZE=1 WIDTH="100%">
+<blockquote><b>Note</b>: Because the “Kara Eye Socket” polygons were created
+from the points that belong to the “Kara Eye” group, the points of the
+eye socket now also belong to that group. Geometry derived from existing
+geometry will inherit the properties of that existing geometry – such as
+weight map values, point group assignments, and surface names.</blockquote>
+
+<hr SIZE=1 WIDTH="100%">
+<p>Later on we will give “Kara Eye Socket” a 100% Luminous, 0% Diffuse
+surface, with the same color as the Edges. Without shading information,
+the audience will have no clue as to its true shape – it will just fill
+in the gaps between the eyes and the face as a flat “paint.” It will look
+like part of the ink line when rendered.
+<p>For now, though, leave it unsurfaced. The shading it has now will let
+you have an idea of its shape at all times during the modeling stages.
+<p><b>STEP 11</b>: Save this object as <b>head07.lwo</b>.
+<p><a href="../../contents.htm">Table of Contents</a>
+</body>
+</html>

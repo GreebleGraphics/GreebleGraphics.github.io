@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>The Torso</TITLE>
+</HEAD>
+<BODY>
+
+<B><FONT SIZE=5><P>The Torso</P>
+</B><P>&nbsp;</P>
+<P>Most people would rather build a head than a torso, but this tutorial will start with the torso. The torso cage is relatively simpler, so you’ll get more spline modeling experience before approaching the more complex form of the head.</P>
+<P>&nbsp;</P>
+<P>Also, because the head has a more complex form, starting with the head risks letting its complexity trickle into the rest of the mesh. When you have a lot of polygons bordering the neck, you’ll hesitate to fight it. You’ll force the torso to fit the head, rather than the other way around. Then you’ll end up with more polygons than you need to define the shoulders, the chest…the unneccessary complexity might even trickle into the extremities.</P>
+<P>&nbsp;</P>
+<P>In short: you’ll have let a relatively small area of geometry determine the polygon count of your entire model; the modeling equivalent of forcing the rest of a drawing to fit a small detail that has already been drawn.</P>
+<P>&nbsp;</P>
+<P>Start with the general before moving on to the specific.</P>
+<P>&nbsp;</P>
+<B><P>Note</B>: Those who have extensive modeling experience already know enough to look out for this modeling trap, and can thus start with any part of a model that they wish. For this tutorial, however, we will begin with the torso. </P>
+<P>&nbsp;</P>
+<P>A few notes about subdivision surfaces and celshading:</P>
+<P>&nbsp;</P>
+<OL>
+
+<LI>The simpler the subdivision cage, the smoother the mesh will look. The smoother the mesh, the smoother the shading. The smoother the shading, the nicer the celshading will look.</LI>
+<LI>LightWave’s Edges are derived from polygon edges. Thus, the smoother the polygonal mesh, the smoother the inking will look. Any unplanned bumps and dents in your model will cause unwanted ink lines in your render. (This is part of the reason people have trouble celshading a &quot;Poser&quot; model – it often has too many anatomical details in it that break up the inking and shading).</LI>
+<LI>Real cartoons stylize reality. The Super Cel Shader alone cannot make a model look like a cartoon – the model must also have the stylized form of a cartoon. (This is the other part of the reason why people find it tough to celshade a non-cartoony &quot;Poser&quot; model – the characters of <I>Akira</I> look nothing like &quot;Generic Man&quot;).</LI>
+<LI>The cross-section of an eight-sided cylinder forms a perfect ellipse/circle when the cylinder is converted to subdivision patches. Remember this as you build the neck and waist! Almost the entire torso, in fact, can be thought of as cylinders (neck, waist and arm). It’s that pesky chest area, plus the question of how these cylinders should connect to each other that drives one to splines.</LI>
+<LI>When modeling a character, worry first about how its Silhouette Edges will appear in Layout. You can fake the other edges. With bump and diffuse maps, you can even fake most shading details (such as the tendons on the back of a hand). But you cannot fake Silhouette Edges. Silhouette Edges occur wherever the polygon normals start to angle away from the camera (<B>Figure 10-4).</LI></OL>
+
+</B><P>&nbsp;</P>
+<B><P>Note</B>: Some celshaders might suggest that fresnel &quot;inking&quot; (such as the Bump Edges feature of Super Cel Shader) might substitute for Silhouette Edges, since fresnel inking is also angle-based. Fresnel inking can look fine in still images, but the illusion of a hand-drawn ink line often disappears during an animation. Try fresnel inking an animation of a human hand – an artist once put it best when he likened the effect to &quot;crawling highlights.&quot;</P>
+<P>&nbsp;</P></FONT></BODY>
+</HTML>

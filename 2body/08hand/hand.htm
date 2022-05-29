@@ -1,0 +1,513 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Jennifer Hachigian">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (WinNT; I) [Netscape]">
+   <title>9.1 -- The Hand</title>
+<link REL=StyleSheet HREF="../../style.css" TYPE="text/css">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" vlink="#800080" alink="#0000FF">
+
+<h3>
+The Torso – Hand Construction</h3>
+
+<p><br>This part of the tutorial will tell you how to build a hand. The
+next part will tell you how to attach it.
+<p><b>STEP 1</b>: Load <b>torso11.lwo</b> into Modeler (if you did not
+follow the previous tutorial sections and just want to practice building
+a hand, you may load <b>torso11.lwo</b> off the CD-ROM).
+<p><b>STEP 2</b>: Go to an empty layer. Zoom in on the region of the model
+sheet that displays the left hand. Set the Perspective view window to “Wireframe
+Shade.”
+<p>
+<hr SIZE=1 WIDTH="100%">
+<blockquote><b>Note</b>: More experienced modelers may skip to Step 8 after
+creating a box that looks like the one in <b><font color="#CC0000">Figure
+1</font></b> – 3x1x3 segments, about the size of the palm of the hand.
+<p>People unfamiliar with the interactive Box tool should follow Steps
+3-7.</blockquote>
+
+<hr SIZE=1 WIDTH="100%">
+<p><b>STEP 3</b>: Type Shift-x to activate the Box tool. (<b>Create > Objects
+> Box</b>). In the Back View, left-click on the top of the wrist, hold
+down the left mouse button and drag down and to the right. When the bottom
+of the box touches the bottom of the wrist and the rightmost edge of the
+box touches the base of the fingers, let go of the left mouse button.
+<p>
+<hr SIZE=1 WIDTH="100%">
+<blockquote><b>Note</b>: Notice the blue highlights on the edges of the
+box. You can still adjust the dimensions of this box by left-clicking and
+dragging any of these highlights. You can also adjust the placement of
+this box by left-clicking and dragging on the blue crosshairs in the center
+of the box.</blockquote>
+
+<hr SIZE=1 WIDTH="100%">
+<p>Right now this “box” is a two-dimensional plane. Let’s add some depth
+to it.
+<p><b>STEP 4</b>: In the Right View, left-click on the center of the box,
+hold down the left mouse button and drag to the right. The box will now
+have gained depth. Keep dragging the right side of the box until it touches
+the black circle that defines the root of the arm on the model sheet.
+<p><b>STEP 5</b>: In the Right View, Left-click on the center of the leftmost
+side of the box, hold down the left mouse button and drag to the left until
+it, too, touches the black circle that defines the root of the arm on the
+model sheet.
+<p>You now have a box that’s about the right size for the volume of the
+elf-girl’s palm, but we’ll be using Bevel to create her fingers and thumb.
+Before you “set” this box, you must make one final adjustment: the number
+of segments that define each side of this box.
+<p><b>STEP 6</b>: In the tradition of Elfquest, this elf-girl will have
+three fingers. Move your mouse pointer over the Top View and leave it there.
+On your keyboard, tap the “up” arrow key twice. You should have increased
+the number of segments along the Z axis by 2, making for a total of three
+segments.
+<p><b>STEP 7</b>: Let’s not forget to make “room” for the thumb. With your
+mouse pointer still in the Top View, tap the “right” arrow key twice. The
+number of segments along the X axis should now be three, and the box should
+look like <b><font color="#CC0000">Figure 1</font></b>.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig001.gif"><img SRC="small/s_Fig001.GIF" ALT="Figure 1" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 1</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig002.gif"><img SRC="small/s_Fig002.GIF" ALT="Figure 2" NOSAVE BORDER=1 height=125 width=200></a>
+<br><b>Figure 2</b></td>
+</tr>
+</table>
+
+<p><b>STEP 8</b>: Type Ctrl-t to activate the Drag tool. (Notice that as
+soon as you activated another modeling tool, the box lost its interactive
+highlights – it is now “set” in Modeler). In the Top View, Drag the points
+of the left corners of the box in slightly towards the center, to make
+the end of the box look more “rounded.” (<b><font color="#CC0000">Figure
+2</font></b>)
+<p><b>STEP 9</b>: In the Top View, select the three polygons that form
+the rightmost side of this box. Type b to activate the Bevel tool (<b>Multiply
+> Extend > Bevel</b>). We are only going to create the root of the fingers
+right now. Left-click and drag slightly to the right to shift these selected
+polygons slightly away from the palm of the hand. Then drag slightly down
+to shrink these polygons slightly – just enough to separate each from the
+other two. (<b><font color="#CC0000">Figure 3</font></b>)
+<p><a href="Fig003.gif"><img SRC="small/s_Fig003.GIF" ALT="Figure 3" NOSAVE BORDER=1 height=139 width=200></a>
+<br><b>Figure 3</b>
+<p>Like the Box tool, the Bevel tool’s effects are still “tweakable” at
+this stage. They will not be set in stone until you:
+<ol TYPE=a>
+<li>
+deactivate Bevel</li>
+
+<li>
+select another tool, or</li>
+
+<li>
+select/reselect another editing mode (ie: Points/Polygons/Volume Selection
+mode)</li>
+</ol>
+<b>STEP 10</b>: Type b again to deactivate the Bevel tool, and to leave
+its effect in place.
+<p>
+<hr SIZE=1 WIDTH="100%">
+<blockquote><b>Note</b>: The closer these polygons are to the palm, the
+tighter the spaces between the fingers will be when the faces of the hand
+are converted into SubPatch surfaces. Remember that the closer that two
+points lie together, the tighter the curve running through those two points
+will be, whether you deal with splines or SubPatch surfaces.</blockquote>
+
+<hr SIZE=1 WIDTH="100%">
+<p><b>STEP 11</b>: It can’t hurt to start applying weight maps at this
+stage. Set the Perspective View window’s display type to “Weight Shade.”
+<p><b>STEP 12</b>: Deselect everything. Of the three polygons that you
+beveled in Step 227, select the lowest one in the Top View – the root of
+the index finger. From the drop-down list next to the W, T, and M buttons
+in the lower right-hand corner of Modeler, select “(new)” to activate the
+Create Weight Map tool. Give this weight map a name of “Left Index Finger”
+with an Initial Value of 100.0%, and click on “OK.” It should look like
+<b><font color="#CC0000">Figure
+4</font></b>.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig004.gif"><img SRC="small/s_Fig004.GIF" ALT="Figure 4" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 4</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig005.gif"><img SRC="small/s_Fig005.GIF" ALT="Figure 5" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 5</b></td>
+</tr>
+</table>
+
+<p><b>STEP 13</b>: Deselect everything. Select the middle of the three
+polygons that you beveled in Step 227 – the root of the middle finger.
+Create a weight map called “Left Mid Finger” with an Initial Value of 100.0%
+for the points of this selected polygon. (<b><font color="#CC0000">Figure
+5</font></b>)
+<p><b>STEP 14</b>: Deselect everything. Select the last of the three polygons
+that you had beveled in Step 227 – the root of the pinky finger. Create
+a weight map called “Left Pinky” with an Initial Value of 100.0% for the
+points of the selected polygon. (<b><font color="#CC0000">Figure 6</font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig006.gif"><img SRC="small/s_Fig006.GIF" ALT="Figure 6" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 6</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig007.gif"><img SRC="small/s_Fig007.GIF" ALT="Figure 7" NOSAVE BORDER=1 height=166 width=200></a>
+<br><b>Figure 7</b></td>
+</tr>
+</table>
+
+<p><b>STEP 15</b>: Let’s grow some fingers. Select the three polygons that
+you just weight-mapped in the previous three steps. Type b to activate
+the Bevel tool. Use this tool to grow the rough shapes of fingers, as seen
+in <b><font color="#CC0000">Figure 7</font></b>, by left-clicking on the
+selected geometry and dragging to the right (and slightly downwards, to
+taper the fingers in the Top view).
+<p><b>STEP 16</b>: Leave these polygons selected. Let’s give these rough
+“fingers” a bit of taper in the Back View. Type h to activate the Stretch
+tool. In the Back View, left-click on the bottom of the polygons, hold
+down the Ctrl key to restrict movement to one axis, and drag the mouse
+pointer downwards until it looks like <b><font color="#CC0000">Figure 8</font></b>.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig008.gif"><img SRC="small/s_Fig008.GIF" ALT="Figure 8" NOSAVE BORDER=1 height=131 width=200></a>
+<br><b>Figure 8</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig009.gif"><img SRC="small/s_Fig009.GIF" ALT="Figure 9" NOSAVE BORDER=1 height=153 width=200></a>
+<br><b>Figure 9</b></td>
+</tr>
+</table>
+
+<p><b>STEP 17</b>: Deselect everything. Type Shift-k to activate the Knife
+tool. In the Back View, make two cuts in the fingers – one cut for each
+finger joint. It should look like the first panel of <b><font color="#CC0000">Figure
+9</font></b>.
+<p><b>STEP 18</b>: Deselect everything. In the Back View, select the points
+that form the bottom of the roots of the fingers. Type t to activate the
+Move tool, and move them up until they touch the black line that defines
+the top of the thumb in the model sheet. (<b><font color="#CC0000">Figure
+9</font></b>)
+<p><b>STEP 19</b>: These fingers need more geometry if they are going to
+have a chance of maintaining their volume when bending. Deselect everything.
+In the Back View, use the Knife tool to make two cuts on each side of the
+“lines” that define the joints. (<b><font color="#CC0000">Figure 10</font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig010.gif"><img SRC="small/s_Fig010.GIF" ALT="Figure 10" NOSAVE BORDER=1 height=153 width=200></a>
+<br><b>Figure 10</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig011.gif"><img SRC="small/s_Fig011.GIF" ALT="Figure 11" NOSAVE BORDER=1 height=158 width=200></a>
+<br><b>Figure 11</b></td>
+</tr>
+</table>
+
+<p><b>STEP 20</b>: We’re going to grow the thumb next, but we should first
+refine the shape of the palm for it. In the Top View, select the polygon
+that will become the root of the thumb. Type y to activate the Rotate tool.
+In the Top View, move the mouse pointer over the rightmost edge of the
+polygon, left-click and drag to the left until the polygon lies at a 45-degree
+angle. (<b><font color="#CC0000">Figure 11</font></b>)
+<p><b>STEP 21</b>: Leave this polygon selected. Use the Bevel tool to grow
+a rough thumb, as seen in <b><font color="#CC0000">Figure 12</font></b>.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig012.gif"><img SRC="small/s_Fig012.GIF" ALT="Figure 12" NOSAVE BORDER=1 height=166 width=200></a>
+<br><b>Figure 12</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig013.gif"><img SRC="small/s_Fig013.GIF" ALT="Figure 13" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 13</b></td>
+</tr>
+</table>
+
+<p><b>STEP 22</b>: Select the entire geometry of this rough thumb, and
+create a weight map called “Left Thumb” with an Initial Value of 100.0%.
+(<b><font color="#CC0000">Figure 13</font></b>)
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=3 >
+<tr>
+<td><a href="torso2d.htm">Previous Page</a></td>
+
+<td><a href="../../contents.htm">Table of Contents</a></td>
+
+<td><a href="torso3.htm">Next Page</a></td>
+</tr>
+</table>
+
+<p><b>STEP 23</b>: In the Top View, use the Knife tool to make three cuts
+across the center of the thumb – one for the joint of the thumb, and one
+on either side of that “joint” cut to help the thumb keep its volume when
+bent. (<b><font color="#CC0000">Figure 14</font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig014.gif"><img SRC="small/s_Fig014.GIF" ALT="Figure 14" NOSAVE BORDER=1 height=179 width=200></a>
+<br><b>Figure 14</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig015.gif"><img SRC="small/s_Fig015.GIF" ALT="Figure 15" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 15</b></td>
+</tr>
+</table>
+
+<p><b>STEP 24</b>: One last weight map. Deselect everything, then select
+the polygons that form the palm. Create a weight map called “Left Hand”
+with an Initial Value of 100.0%. It should look like <b><font color="#CC0000">Figure
+15</font></b>.
+<p><b>STEP 25</b>: Let’s see how this looks as a SubPatch cage. Deselect
+everything and hit the Tab key. We’ve already created our weight maps,
+so set the Perspective View display type to Wireframe Shade. (<b><font color="#CC0000">Figure
+16</font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig016.gif"><img SRC="small/s_Fig016.GIF" ALT="Figure 16" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 16</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig017.gif"><img SRC="small/s_Fig017.GIF" ALT="Figure 17" NOSAVE BORDER=1 height=80 width=200></a>
+<br><b>Figure 17</b></td>
+</tr>
+</table>
+
+<p><b>STEP 26</b>: Before we distort this cage further, we ought to surface
+it while it’s still easy to select surfaces. With everything deselected,
+type q to bring up the Change Surface&nbsp; dialog box. In the Name box,
+type “Kara Glove.” Leave the “Set Initial Color” box checked, and check
+the “Smoothing” checkbox. Double-click on the gray box to the right of
+the Color values to set a specific color, and set the Color to a brown
+color for now (such as RGB 128 064 000). (<b><font color="#CC0000">Figure
+17</font></b>) Click on OK to apply this surface to the entire hand object.
+<p><b>STEP 27</b>: The model sheet shows the character wearing fingerless
+gloves. Select the SubPatches shown in <b><font color="#CC0000">Figure
+18</font></b>, type q to activate the Change Surface dialog box, and assign
+a surface called “Kara Skin,” with Smoothing turned on and Color values
+that resemble pale skin for now (such as RGB 204 183 167). (<b><font color="#CC0000">Figure
+18</font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig018.gif"><img SRC="small/s_Fig018.GIF" ALT="Figure 18" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 18</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig019.gif"><img SRC="small/s_Fig019.GIF" ALT="Figure 19" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 19</b></td>
+</tr>
+</table>
+
+<p><b>STEP 28</b>: The model sheet also shows trim on the fingerless gloves.
+Deselect everything, select the SubPatches shown in <b><font color="#CC0000">Figure
+19</font></b>, and assign a surface called “Kara Glove Trim.” Make this
+surface’s Color yellow for now, (such as RGB 220 160 000), with Smoothing
+turned on.
+<p><b>STEP 29</b>: Time to distort this object into more of a hand shape.
+First, the fingertips should have more of a “slant” at their bottoms. Deselect
+everything. In the Back View, select the points at the bottom of the fingertips.
+Move these points towards the palm until the finger tips have more of a
+taper, as seen in <b><font color="#CC0000">Figure 20</font></b>.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig020.gif"><img SRC="small/s_Fig020.GIF" ALT="Figure 20" NOSAVE BORDER=1 height=160 width=200></a>
+<br><b>Figure 20</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig021.gif"><img SRC="small/s_Fig021.GIF" ALT="Figure 21" NOSAVE BORDER=1 height=158 width=200></a>
+<br><b>Figure 21</b></td>
+</tr>
+</table>
+
+<p><b>STEP 30</b>: Deselect everything and select the polygons that form
+the middle finger. Use the Stretch tool at the base of this finger to lengthen
+it, until the lines of its SubPatch surfaces touch the black lines of the
+model sheet. (<b><font color="#CC0000">Figure 21</font></b>).
+<p><b>STEP 31</b>: Deselect everything and then select the polygons that
+form the pinky. Use the Stretch tool at its base to shorten it slightly,
+until it looks like <b><font color="#CC0000">Figure 22</font></b>.
+<p><a href="Fig022.gif"><img SRC="small/s_Fig022.GIF" ALT="Figure 22" NOSAVE BORDER=1 height=160 width=200></a>
+<br><b>Figure 22</b>
+<p>The index and pinky fingers ought to have room to “spread out” when
+rotated by their bones. Right now, however, their weight maps currently
+have no control over any of the points of the palm. When the fingers spread
+out right now, there’s a risk of “crimping” happening at the outer edges
+of the pinky and index fingers (since the palm points, unaffected by the
+index and pinky bones, will remain fixed as the points of the index and
+pinky rotate past them).
+<p>We could give the weight maps of the pinky and index fingers co-ownership
+of these points, but that might cause problems, too, as the outer points
+might then rotate into the palm as the fingers spread out. (They wouldn’t
+rotate as much as the finger points, since the palm bones, having co-ownership,
+would fight to keep them fixed…but they would probably still rotate inwards,
+slightly).
+<p>Let’s see how far we can get by just moving the four closest palm points
+out of the way. Instead of giving the index and pinky fingers co-ownership
+of the palm points, we’ll just give the index and pinky what they truly
+need – some “breathing room.”
+<p><b>STEP 32</b>: Deselect everything. Select the points shown in the
+first panel of <b><font color="#CC0000">Figure 23</font></b>, and Move
+them towards the wrist. Pay attention to the SubPatch lines connecting
+these points to the inner spaces between the fingers. When these lines
+form 30-degree angles in relation to the base of the index and pinky fingers,
+stop moving the points. (30 degrees will probably be the farthest the index
+and pinky fingers will spread out). (<b><font color="#CC0000">Figure 23</font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig023.gif"><img SRC="small/s_Fig023.GIF" ALT="Figure 23" NOSAVE BORDER=1 height=159 width=200></a>
+<br><b>Figure 23</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig024.gif"><img SRC="small/s_Fig024.GIF" ALT="Figure 24" NOSAVE BORDER=1 height=136 width=200></a>
+<br><b>Figure 24</b></td>
+</tr>
+</table>
+
+<p><b>STEP 33</b>: Now to refine the thumb. Deselect everything. In the
+Top View, select the points shown in <b><font color="#CC0000">Figure 24</font></b>
+and Move them inwards, to give the thumb more of a taper.
+<p>This thumb ought to hang down at a 30-degree angle, but Rotating it
+to that angle in the Top, Back, or Right Views would be difficult. Happily,
+we can use Modeler’s tools in the Perspective View.
+<p><b>STEP 34</b>: Select the polygons of the thumb. Rotate the Perspective
+View until the selected edges of the sides the thumb line up with each
+other. When they do, chances are good that the sides of the root of the
+thumb are now perpendicular to you. Type y to activate the Rotate tool,
+place the mouse pointer over the root of the thumb (the spot where the
+base thumb bone would be), and Rotate the selected polygons until the tip
+of the thumb touches the black lines defining the bottom of the thumb in
+the Back View. (<b><font color="#CC0000">Figure 25</font></b>)
+<p><a href="Fig025.gif"><img SRC="small/s_Fig025.GIF" ALT="Figure 25" NOSAVE BORDER=1 height=130 width=200></a>
+<br><b>Figure 24</b>
+<p><b>STEP 35</b>: Save this object as <b>torso12.lwo</b>.
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=3 >
+<tr>
+<td><a href="torso2d.htm">Previous Page</a></td>
+
+<td><a href="../../contents.htm">Table of Contents</a></td>
+
+<td><a href="torso3.htm">Next Page</a></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<h3>
+The Torso – Hand Attachment</h3>
+
+<p><br><b>STEP 36</b>: Load torso12.lwo into Modeler (if you did not follow
+the previous tutorial sections and just want to practice attaching a hand
+to an arm, you may load torso12.lwo off the CD-ROM).
+<p><b>STEP 37</b>: If the hand looks like it’s the wrong size or in the
+wrong position in relation to the body, select its polygons and Move and
+Size it to your taste.
+<p><b>STEP 38</b>: If it looks good to you, go to the layer that contains
+the hand object. Deselect everything. Type c to Copy its geometry. Go to
+the body layer and type v to Paste a copy of the hand geometry into the
+same layer.
+<p><b>STEP 39</b>: Hit the Tab key to turn everything back into faces,
+to make the geometry easier to see (and thus, easier to manipulate).
+<p><b>STEP 40</b>: Select the polygons at the stump of the arm, and Move
+them back slightly, to put some distance between them and the hand. (<b><font color="#CC0000">Figure
+26</font></b>)
+<p><a href="Fig026.gif"><img SRC="small/s_Fig026.GIF" ALT="Figure 26" NOSAVE BORDER=1 height=160 width=200></a>
+<br><b><font color="#000000">Figure 26</font></b>
+<p><b>STEP 41</b>: Leaving them selected, type the equal sign key (“=”)
+to Hide all unselected geometry. (<b><font color="#CC0000">Figure 27</font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig027.gif"><img SRC="small/s_Fig027.GIF" ALT="Figure 27" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 27</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig028.gif"><img SRC="small/s_Fig028.GIF" ALT="Figure 28" NOSAVE BORDER=1 height=150 width=200></a>
+<br><b>Figure 28</b></td>
+</tr>
+</table>
+
+<p><b>STEP 42</b>: Leaving them selected, use the Drag tool in the Right
+View to get the points of the stump of the left hand to match the shape
+of the points of the stump of the left arm. (<b><font color="#CC0000">Figure
+28</font></b>)
+<p><b>STEP 43</b>: (Still) leaving them selected, type Shift-z to Merge
+them into two (weird-looking) polygons. Don’t worry about the aesthetics
+of these (weird-looking!) polygons – they are merely the means to an end.
+(<b><font color="#CC0000">Figure 29</font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig029.gif"><img SRC="small/s_Fig029.GIF" ALT="Figure 29" NOSAVE BORDER=1 height=150 width=200></a>
+<br><b>Figure 29</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig030.gif"><img SRC="small/s_Fig030.GIF" ALT="Figure 30" NOSAVE BORDER=1 height=145 width=200></a>
+<br><b>Figure 30</b></td>
+</tr>
+</table>
+
+<p><b>STEP 44</b>: Leaving these polygons selected, type f to Flip them
+to face away from each other. (<b><font color="#CC0000">Figure 30</font></b>)
+<p><b>STEP 45</b>: (Still!) leaving them selected, activate Create Skin
+from <b>Multiply > Extend > More > Create Skin</b>. (<b><font color="#CC0000">Figure
+31</font></b>)
+<p>About Create Skin: Create Skin will do its best to connect two polygons
+with triangles, but a literal-minded computer can only do so much. By moving
+the points of the stump of the left hand into the shape of the points of
+the stump of the left arm in Step 260, you helped Create Skin figure out
+which points are supposed to be connected to each other.
+<p><b>STEP 46</b>: Type x to Cut out the selected polygons, leaving the
+newly created geometry behind.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig031.gif"><img SRC="small/s_Fig031.GIF" ALT="Figure 31" NOSAVE BORDER=1 height=163 width=200></a>
+<br><b>Figure 31</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig032.gif"><img SRC="small/s_Fig032.GIF" ALT="Figure 32" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 32</b></td>
+</tr>
+</table>
+
+<p><b>STEP 47</b>: In the Perspective View, select two adjacent triangles,
+type Shift-z to Merge them into a single quad polygon, and deselect them.
+Do this to the rest of the adjacent triangles, one pair at a time, until
+you have something that looks like <b><font color="#CC0000">Figure 32</font></b>.
+<p><b>STEP 48</b>: Deselect everything. In Points Selection Mode, type
+w to bring up Point Statistics. (<b><font color="#CC0000">Figure 33</font></b>)
+Click on the plus sign next to “0 Polygons” to select that one leftover
+point from the center of the arm stump, the point that doesn’t belong to
+any polygons anymore. Put it out of its misery by typing x to Cut it out
+of existence.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig033.gif"><img SRC="small/s_Fig033.GIF" ALT="Figure 33" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 33</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig034.gif"><img SRC="small/s_Fig034.GIF" ALT="Figure 34" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 34</b></td>
+</tr>
+</table>
+
+<p><b>STEP 49</b>: Type q to bring up Change Surface. You already have
+a surface named “Kara Glove.” Click on the arrow button next to “Name”
+to select this surface from a drop-down list, and click on “OK.” (<b><font color="#CC0000">Figure
+34</font></b>)
+<p><b>STEP 50</b>: Type the backslash key (“\”) to Unhide all geometry.
+Type the Tab key to see how it looks.
+<p><a href="Fig035.gif"><img SRC="small/s_Fig035.GIF" ALT="Figure 35" NOSAVE BORDER=1 height=152 width=200></a>
+<br><b>Figure 35</b>
+<p><b>STEP 51</b>: Not bad. (<b><font color="#CC0000">Figure </font></b>10-178)
+Save this object as <b>torso13.lwo</b>.
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=3 >
+<tr>
+<td><a href="torso2d.htm">Previous Page</a></td>
+
+<td><a href="../../contents.htm">Table of Contents</a></td>
+
+<td><a href="torso3.htm">Next Page</a></td>
+</tr>
+</table>
+<a href="../../contents.htm"></a>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Jennifer Hachigian">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (WinNT; I) [Netscape]">
+   <title>30.1 -- The Head -- Ear</title>
+<link REL=StyleSheet HREF="../../style.css" TYPE="text/css">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" vlink="#800080" alink="#0000FF">
+
+<h3>
+The Head – Detailing Stage 4 (Ears)</h3>
+Do not spline model an ear.
+<p>At least one or two modelers have successfully spline modeled ears in
+the past, but they wound up editing so many points in their spline cages
+that they lost any advantage splines might have over other techniques.
+Spline modeling draws its power from using <i>fewer</i> points than other
+techniques to get the same results. (The modeler who has only ten points
+to edit gets to go home earlier than the modeler who has to spend his time
+tweaking 100 points).
+<p>
+<hr SIZE=1 WIDTH="100%">
+<blockquote><b>Note</b>: Use the fastest tool that gives you the best results.
+If you can create the geometry you need most quickly from a primitive,
+then do so. (You can Bevel a hand from a box; you can use the Seashell
+tool to help you model the scroll of a violin). If you can derive the geometry
+you want from existing geometry, then do so. (You can quickly BandSaw “fabric
+trim” into sleeves and skirts). <i>However</i>, if you cannot quickly and
+easily create the geometry you need from either a primitive or existing
+geometry (a human head, a human torso, a tunic, an American gallon-of-milk
+container), then use splines.</blockquote>
+
+<hr SIZE=1 WIDTH="100%">
+<p>As a celshaded object, one might get away with modeling the ears separately,
+then burying the ends of the ears in the mesh of the head. However, by
+making the ears part of the mesh, we will guarantee smooth shading where
+the ear meets the head. A separate ear mesh buried in the head might have
+an abrupt angle where the ear emerges from the head. When half-shadowed,
+that “seam” might look odd for a “hand-painted” cel.
+<p>So…let’s have our elf-girl “grow” an ear. Fortunately, she does not
+have the complex humanoid ears of <i>Elfquest</i>. Such ears might require
+us to create a separate ear mesh (as with the hand) to Skin on to the head
+later. Our elf has the simple, feline ears of <i>Lodoss</i> and <i>Phantasy
+Star</i>. We can quickly Smooth Shift such an ear from the existing geometry
+with little fuss.
+<p><b>STEP 1</b>: Load <b>head08.lwo</b> into Modeler. (If you did not
+follow the steps in the previous section and just want Smooth Shifting
+experience, you may load <b>head08.lwo</b> from the CD-ROM).
+<p><b>STEP 2</b>: Turn off SubPatch surfaces by tapping the Tab key. Select
+the two skin-colored polygons closest to the root of the ear in the Right
+View’s model sheet, and type = (the equal sign) to Hide all unselected
+geometry. (<b><font color="#CC0000"><a href="Fig001.gif">Figure 1</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig001.gif"><img SRC="small/s_Fig001.GIF" ALT="Figure 1" NOSAVE BORDER=1 height=161 width=200></a>
+<br><b>Figure 1</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig002.gif"><img SRC="small/s_Fig002.GIF" ALT="Figure 2" NOSAVE BORDER=1 height=161 width=200></a>
+<br><b>Figure 2</b></td>
+</tr>
+</table>
+
+<p><b>STEP 3</b>: First, we will create the cross-section of an ear – “root”
+polygons from which we can grow the ear. Type Shift-f to activate the Smooth
+Shift tool. With both polygons selected, right-click on them once to cause
+a slight Smooth Shift. Leave both polygons selected. Do not move the lowest
+two of the points on the –Z side of the ear in the Right View – leave them
+in place. In the Right View, use the Drag tool to move all other points
+of the selected polygons inwards, roughing out the cross-section of an
+ear. (<b><font color="#CC0000"><a href="Fig002.gif">Figure 2</a></font></b>)
+The thinner this cross-section, the thinner the ear will be.
+<p>
+<hr SIZE=1 WIDTH="100%">
+<blockquote><b>Note</b>: The cross-section of this ear is the backwards
+shape of a “C,” not an “O.” This is why you must leave those two points
+in place. We’ll get rid of them in the next step.</blockquote>
+
+<hr SIZE=1 WIDTH="100%">
+<p><b>STEP 4</b>: Each of the two points that we did not move overlap (or
+nearly overlap) one of the original six points bordering the ear.We have
+two pairs of points, then, that each look like a single point (or nearly
+look like a single point). In Points Selection Mode, Weld each pair of
+points into a single point.
+<p>By Welding those pairs of points together, we stole two points from
+the thin four-point polygon that they defined, leaving behind a two-point
+polygon. We have no use for this polygon.
+<p><b>STEP 5</b>: Deselect everything in Polygons Selection mode, select
+this two-point polygon and delete it. (You might find it easiest to either
+Lasso this polygon or select all two-point polygons from the Polygon Statistics
+panel).
+<p><b>STEP 6</b>: This leaves two triangles in the upper part of the ear.
+They can gain a point and still call themselves SubPatch material. Select
+these two triangles and add a point to their shared edge. Drag this new
+point down, to cause a more rounded end in this cross-section. Also, Drag
+the topmost inner point up to thin out the top edge of the cross-section.
+It should look like <b><font color="#CC0000"><a href="Fig003.gif">Figure
+3</a></font></b>.
+<p><b>STEP 7</b>: Now to see the fruits of your labors. Deselect everything.
+Hit the Tab key to convert these polygons into SubPatch surfaces. Select
+the four SubPatch surfaces that define the cross-section of the ear.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig003.gif"><img SRC="small/s_Fig003.GIF" ALT="Figure 3" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 3</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig004.gif"><img SRC="small/s_Fig004.GIF" ALT="Figure 4" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 4</b></td>
+</tr>
+</table>
+
+<p><b>STEP 8</b>: Type Shift-f to activate Smooth Shift. Right-click on
+these SubPatch surfaces once to create a slight Smooth Shift.&nbsp; In
+the Back View, Move the selected geometry straight away from the head as
+in <b><font color="#CC0000"><a href="Fig004.gif">Figure 4</a></font></b>.
+<p>Note that, when not using Move, the Position in the lowest-left corner
+of Modeler reports your mouse pointer’s XYZ coordinates. You should see
+values hovering around 300mm on the X axis.
+<p>We can use this information to guess what value to input into Set Value,
+to squash these selected polygons flat against a YZ plane.
+<p><b>STEP 9</b>: Type Ctrl-v to bring up Set Value. Input 300mm for the
+X axis, then click on OK. The points of the selected geometry now runs
+vertically in the Back View.
+<p><b>STEP 10</b>: Deselect everything. Make a vertical Knife cut through
+the ear, close to the head. It should look like <b><font color="#CC0000"><a href="Fig005.gif">Figure
+5</a></font></b>.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig005.gif"><img SRC="small/s_Fig005.GIF" ALT="Figure 5" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 5</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig006.gif"><img SRC="small/s_Fig006.GIF" ALT="Figure 6" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 6</b></td>
+</tr>
+</table>
+
+<p><b>STEP 11</b>: Judging from the length of the ear in the model sheet
+of the Right View, this ear geometry could be a little longer. Select the
+polygons at the end of the model, and Move them out until their points
+appear to be the same distance from the root of the ear as the distance
+shown in the Right View model sheet. Then Cut them out. We’re going to
+Weld the points of the tip of the ear into a single point later on, so
+we don’t need these SubPatch surfaces.
+<p><b>STEP 12</b>: Between the Knife cut you made two steps ago and the
+outermost points of the ear, select two or more polygons in a row. Use
+BandSaw to subdivide this band of polygons into four sections, as in <b><font color="#CC0000"><a href="Fig006.gif">Figure
+6</a></font></b>.
+<p><b>STEP 13</b>: With all but the innermost set of SubPatch surfaces
+selected, activate the Taper 1 tool (<b>Modify > Stretch > Taper 1</b>).
+In the Back View, right-click on the outermost points of the ear, and drag
+to the points of the Knife cut you made a few steps ago. This will set
+the falloff of the Taper effect. Tap on the up arrow key until you get
+a triangle whose lower edge best matches the top edge of the ear in the
+model sheet. Then, in the Right View, place your mouse pointer slightly
+in front of the ear, left-click and drag to the left. Everything will be
+scaled towards your mouse pointer, curving the ear forwards in the Top
+and Right Views even as it gets tapered in the Back View. (<b><font color="#CC0000"><a href="Fig007.gif">Figure
+7</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig007.gif"><img SRC="small/s_Fig007.GIF" ALT="Figure 7" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 7</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig008.gif"><img SRC="small/s_Fig008.GIF" ALT="Figure 8" NOSAVE BORDER=1 height=152 width=200></a>
+<br><b>Figure 8</b></td>
+</tr>
+</table>
+
+<p><b>STEP 14</b>: Leave these SubPatch surfaces selected. In all Views,
+use Rotate and the Move tool until the ear looks like <b><font color="#CC0000"><a href="Fig008.gif">Figure
+8</a></font></b>. Don’t move/rotate individual segments if you can help
+it -- try to get as close as possible to the model sheet by rotating and
+moving this tapered set of selected SubPatches as a whole, first.
+<p><b>STEP 15</b>: Now let’s tweak it. Select the polygons at the tip of
+the ear. Use Move and Rotate until it looks like <b><font color="#CC0000"><a href="Fig009.gif">Figure
+9</a></font></b>. Don’t worry if it’s too long – just make sure the curves
+of the geometry match the curves of the model sheet.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig009.gif"><img SRC="small/s_Fig009.GIF" ALT="Figure 9" NOSAVE BORDER=1 height=152 width=200></a>
+<br><b>Figure 9</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig010.gif"><img SRC="small/s_Fig010.GIF" ALT="Figure 10" NOSAVE BORDER=1 height=152 width=200></a>
+<br><b>Figure 10</b></td>
+</tr>
+</table>
+
+<p><b>STEP 16</b>:&nbsp; Deselect the ear tip. Select the next two topmost
+sections. If they exceed the boundaries of the ink line in the model sheet,
+use Size to proportionately shrink them, then use the Move tool if necessary
+to place them back within the ink lines of the model sheet. (<b><font color="#CC0000"><a href="Fig010.gif">Figure
+10</a></font></b>)
+<p><b>STEP 17</b>: Deselect everything. Select the points of the ear tip.
+Move them to the tip of the ear in the model sheet, then Weld them together
+into a single point. The SubPatches of the ear tip will flow together and
+pull away from the point at the tip of the ear. (<b><font color="#CC0000"><a href="Fig011.gif">Figure
+11</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig011.gif"><img SRC="small/s_Fig011.GIF" ALT="Figure 11" NOSAVE BORDER=1 height=152 width=200></a>
+<br><b>Figure 11</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig012.gif"><img SRC="small/s_Fig012.GIF" ALT="Figure 12" NOSAVE BORDER=1 height=152 width=200></a>
+<br><b>Figure 12</b></td>
+</tr>
+</table>
+
+<p><b>STEP 18</b>: Draw the Knife tool just under this point in the Right
+View. It may not seem like the Knife tool has touched anything, yet the
+SubPatch surfaces will suddenly snap back into place. (<b><font color="#CC0000"><a href="Fig012.gif">Figure
+12</a></font></b>)
+<p><b>STEP 19</b>: Zoom in on the ear tip and hit the Tab key to convert
+all of your SubPatch surfaces back into polygonal faces. You will see your
+cut near the tip, right through the polygons. Hit the Tab key a few times
+to switch between SubPatch surfaces and polygonal faces. Note how the SubPatch
+geometry pulls away from the point at the tip of the ear.
+<p>The Knife tool acted not on the SubPatch surfaces, but on the polygonal
+faces whose points control the SubPatch surface.
+<p><b>STEP 20</b>: Turn off SubPatch surfaces. Unhide everything by tapping
+the backslash key (“\”).&nbsp; Then turn SubPatch surfaces back on, to
+see how it looks. It should look something like <b><font color="#CC0000"><a href="Fig013.gif">Figure
+13</a></font></b>.
+<p><a href="Fig013.gif"><img SRC="small/s_Fig013.GIF" ALT="Figure 13" NOSAVE BORDER=1 height=152 width=200></a>
+<br><b>Figure 13</b>
+<p><b>STEP 21</b>: Save this object as <b>head09.lwo</b>.
+<p><a href="../../contents.htm">Table of Contents</a>
+</body>
+</html>

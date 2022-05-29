@@ -1,0 +1,717 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (WinNT; I) [Netscape]">
+   <meta name="Author" content="Jennifer Hachigian">
+   <title>2.12 -- The Torso</title>
+<link REL=StyleSheet HREF="../../style.css" TYPE="text/css">
+</head>
+<body text="#000000" bgcolor="#FFFFFF">
+
+<h3>
+The Torso – Spline Cage</h3>
+
+<p><br>Before we start, I’d like to give you a bit of a roadmap for the
+torso spline cage. <b><font color="#CC0000">Figure 2</font></b> shows front,
+side, and three-quarter views of the complete torso spline cage. <b><font color="#CC0000">Figure
+3</font></b> focuses on the upper portion without its neck, and <b><font color="#CC0000">Figure
+4</font></b> focuses on the hip splines.
+<p><a href="Fig002.gif"><img SRC="small/s_Fig002.GIF" ALT="Figure 2" NOSAVE BORDER=1 height=328 width=200></a>
+<br><b>Figure 2</b>
+<p><a href="Fig003.gif"><img SRC="small/s_Fig003.GIF" BORDER=1 height=64 width=200></a>
+<br><b>Figure 3</b>
+<p><a href="Fig004.gif"><img SRC="small/s_Fig004.GIF" ALT="Figure 4" NOSAVE BORDER=1 height=168 width=200></a>
+<br><b>Figure 4</b>
+<p>For your reference, this spline cage is included on the CD-ROM as <b>s-torso.lwo</b>.
+You may also copy its geometry into a background layer for guidance during
+this part of the tutorial, if you wish.
+<p><b>STEP 1</b>: Open Modeler. Make sure that the lower-left viewport
+is set to the Back (XY) view and that the lower-right viewport is set to
+the Right (ZY) view. Also make sure that the upper-left viewport is set
+to the Top (XZ) view and that the upper-right viewport is set to the Perspective
+view.
+<p><b>STEP 2</b>: Type d to summon the Display Options panel. Left-click
+on its Backdrop tab. In the Backdrop section, left-click on the Presets
+drop-down menu, and select “Load Backdrop.” Load the <b>kara.cfg</b> file
+that you had saved when you set up Modeler’s backdrops in the last section.
+<p>You should now have images of the elf girl in the backdrop, ready to
+trace.
+<p><b>STEP 3</b>: Zoom in on the neck and torso area.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Longer Version</b>: LightWave gives you several options for zooming
+in on a detail. I sometimes prefer using the hotkeys alone, since it’s
+quick and I don’t have to deactivate the tool I’m currently using or fuss
+with a titlebar button.
+<p>Try this: in the lower-right viewport, move the mouse pointer over the
+center of the elf’s torso, and tap g on the keyboard. This will center
+the views around the torso area. (By doing this in the Right view, the
+Y axis remains perfectly centered in the Back view). Now tap on the > key
+(technically, you should tap on the period key WITHOUT holding down the
+Shift key, but it’s easier to remember this key as the “greater than” sign).
+<p>If you want to pan around your view, move your mouse pointer to the
+Right view and hold down the left mouse button and the Alt key. As long
+as you hold down the Alt key, you’ll be able to pan around the view by
+dragging the mouse pointer. (If you’re in a Perspective view, you’ll have
+to hold down the Alt key as well as the Shift key to pan around the view).</td>
+</tr>
+</table>
+
+<p><b>STEP 4</b>: For this model, make the neck, waist, and root of the
+arm as rounded as possible. With splines, you need about eight points for
+a perfect circle. The easiest way to create these points to use the Disc
+tool. Left-click on the button for the Disc tool (<b>Objects > Primitives
+> Disc</b>). Type n to activate its Numeric panel. Left-click on its Actions
+drop-down menu and select Activate. Use the settings listed below (<b><font color="#CC0000">Figure
+5</font></b>). (As you type in the following values, use the Tab key to
+enter each value and advance to the next input field):
+<p>Axis: Y
+<br>Sides: 8
+<br>Segments: 1
+<br>Bottom: 0m
+<br>Top: 0m
+<br>Center X: 0m
+<br>Y: 0m
+<br>Z: 0m
+<br>Radius X: 40mm
+<br>Y: 0m
+<br>Z: 40mm
+<p><a href="Fig005.gif"><img SRC="small/s_Fig005.GIF" ALT="Figure 5" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 5</b>
+<p>Exit the Numeric Panel by left-clicking on the button with the x mark
+on it in the uppermost-right-hand corner of the window. The disc will still
+have a blue bounding box around it. Left-click on the Disc button again,
+and the bounding box will disappear.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Note</b>: The blue bounding box means that the disc it surrounds
+is not yet “set.” If you were to deselect everything by left-clicking on
+the blank grey areas on the toolbars, the disc will disappear. If you were
+to do anything else (from using another tool to entering/re-entering one
+of the Selection Modes), the disc will get fixed in place and its bounding
+box will disappear.</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Note</b>: As long as the blue bounding box is active, you can still
+adjust the placement and dimensions of the primitive geometry that you
+are creating.</td>
+</tr>
+</table>
+
+<p><b>STEP 5</b>: Type k to kill the octagon you have just created, leaving
+its points behind.
+<p><b>STEP 6</b>: Type Ctrl-g to enter Point Selection Mode. Move your
+mouse pointer to the Top view.
+<p>We are going to create four three-point splines that together form the
+shape of a circle. Because<b> the order in which you select points matters</b>,
+it is <i>essential</i> that you select these points in the order that you
+want the “line” of the spline to be “drawn.” In this case, you must select
+the points in a clockwise or counter-clockwise fashion, so as to define
+the border of a circle.
+<p>Tip: Think of point selection as a 3D version of connect-the-dots. The
+order in which you select the points is the order in which the “line” describing
+the spline curve will be “drawn.”
+<p><b>STEP 7</b>: In the Top view, left-click on the “topmost” point to
+select it. Holding down the left mouse button, select the two points to
+its right in a clockwise fashion (<b><font color="#CC0000">Figure 6</font></b>
+and <b><font color="#CC0000">Figure 7</font></b>). Let go of the left mouse
+button. Type Ctrl-p to create a spline.
+<p><a href="Fig006.gif"><img SRC="small/s_Fig006.GIF" ALT="Figure 6" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b><font color="#000000">Figure 6</font></b>
+<p><a href="Fig007.gif"><img SRC="small/s_Fig007.GIF" ALT="Figure 7" NOSAVE BORDER=1 height=44 width=200></a>
+<br><b>Figure 7</b>
+<p><b>STEP 8</b>: Select the rightmost point and the next two points underneath
+it in a clockwise fashion (<b><font color="#CC0000">Figure 7</font></b>).
+Type Ctrl-p to create a spline.
+<p><b>STEP 9</b>: Select the bottom point and the two points to its left
+in a clockwise fashion. Type Ctrl-p to create a spline (<b><font color="#CC0000">Figure
+8</font></b>).
+<p><a href="Fig008.gif"><img SRC="small/s_Fig008.GIF" ALT="Figure 8" NOSAVE BORDER=1 height=44 width=200></a>
+<br><b>Figure 8</b>
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Note</b>: Since the Top view has nothing to do with the Y axis (which
+is what one might normally think of when referring to “up” and “down”),
+“topmost” and “bottom” are used as relative terms here.</td>
+</tr>
+</table>
+
+<p><b>STEP 10</b>: Select the leftmost point and the two points to its
+right in a clockwise fashion. Type Ctrl-p to create a spline (<b><font color="#CC0000">Figure
+8</font></b>). You should now have a spline boundary that looks like <b><font color="#CC0000">Figure
+9</font></b>.
+<p><a href="Fig009.gif"><img SRC="small/s_Fig009.GIF" NOSAVE BORDER=1 height=151 width=200></a>
+<p><b>STEP 11</b>: From a distance you can’t see it, but up close this
+spline boundary looks slightly sharp at its “corners” (those points that
+lie directly on the X and Z axes). Type Ctrl-h to enter Polygon Selection
+Mode. The splines you have just created should automatically be selected
+(in case they are not, select them now). Now type Ctrl-s to Smooth all
+selected curves that share endpoints (<b>Detail > Curves > Smooth</b>).
+Any trace of a corner on this spline boundary will now disappear (<b><font color="#CC0000">Figure
+10</font></b>).
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Note</b>: Each of the Smoothed splines are now made up of five points,
+instead of three. If you don’t believe me, select one and copy it to another
+layer. When you paste it, you’ll see a “three-point” spline and two seemingly
+unattached points. When you select it, however, you’ll see dotted lines
+extending to the “unattached” points. These “unattached” points act as
+control points of the ends of this spline, letting you tweak the curves
+of the spline’s ends. The dotted lines act as visual “handles.”</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Control Points</b>: You can toggle control points on and off by
+using Ctrl-b and Ctrl-n.&nbsp; Notice that those parts of the curve that
+run through the next-to-last points remain the same whether or not the
+control points have been toggled on or not. The dotted lines of the handles
+serve more than a cosmetic purpose, however. If you try to use a spline
+for a Lathe, Rail Extrude, or Rail Clone, those operations will only care
+about the non-handle portion of the spline. Toggling spline handles on
+and off does makes a difference.</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Spline Handles</b>: Ctrl-b and Ctrl-n will work on any spline that
+you create. When it comes to smoothing out the corners of a spline boundary,
+though, Ctrl-s will do all the work for you.</td>
+</tr>
+</table>
+
+<p>You now have a spline boundary that describes a circle. We’ll use copies
+of this spline boundary for the elf’s neck, waist, and arms.
+<p><b>STEP 12</b>: Type t to activate the Move tool (<b>Modify > Move >
+Move</b>). In the Right view, drag the spline boundary up until it reaches
+the base of the neck. (We’ll fine-tune this later).
+<p><b>STEP 13</b>: Select all geometry. Type c to copy this geometry. Type
+t to activate the Move tool. In the Right view, drag the spline circle
+down until it reaches the underside of the belt. Type v to paste the copied
+geometry. You should now have two spline circles – one at the waist, and
+one at the neck.
+<p><b>STEP 14</b>: Deselect everything. Select the spline circle at the
+neck. In the Back view, move the mouse pointer to the leftmost corner of
+the neck circle. Type r to Rotate this geometry 90 degrees to the right.
+<p><b>STEP 15</b>: Type t to activate the Move tool. In the Back view,
+move this geometry to the end of the shoulder. In the Right view, move
+it slightly to the left until it fits inside the black circle of the model
+sheet.
+<p><b>STEP 16</b>: Type v to re-paste the neck circle you had copied in
+Step 29. You should now have three spline circles – one for the neck, one
+for the waist, and one for the root of the arm. It should look like <b><font color="#CC0000">Figure
+11</font></b>.
+<p><b>STEP 17</b>: Deselect everything. Select the waist spline circle.
+Type h to bring up the Stretch tool. In the Right view, move your mouse
+pointer to the center of the waist spline circle. Left-click and drag to
+the right until the edges of the waist spline circle touch the black torso
+lines of the model sheet.
+<p>Chances are that the rightmost edge will reach the black lines first.
+If that happens, just let go of the left mouse button, left-click on the
+rightmost edge and continue to drag to the right until the leftmost edge
+touches the black line.
+<p><b>STEP 18</b>: In the Back view, left-click on the center of the waist
+spline and drag to the right until the edges of the waist spline circle
+touch the black lines of the model sheet. It should look like <b><font color="#CC0000">Figure
+12</font></b>.
+<p><b>STEP 19</b>: Even at this early stage, it’s a good idea to save what
+you have done so far. In the Objects folder of your Content directory,
+create a new folder named <b>Kara</b>. Save this object in that folder
+as <b>torso01.lwo</b>. Then save it again (“Save Object As”) as <b>torso02.lwo</b>.
+<p>As we go through the next set of steps, feel free to tap the s key periodically
+to save the changes you make to “<b>torso02.lwo</b>.” (<b>torso01.lwo</b>
+will always contain the work you did up to Step 35).
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Note</b>: Always save your model in stages, so that you have the
+option of accessing an older version of your model.</td>
+</tr>
+</table>
+
+<p><b>STEP 20</b>: Deselect everything. Select the waist splines. Type
+c to Copy them. Type v to Paste them (the original’s still selected, so
+it’s safe to do this). Type t to activate the Move tool. In the Right view,
+move these splines up until they sit just above the “corner” in the contour
+of the back (<b><font color="#CC0000">Figure 13</font></b>).
+<p><b>STEP 21</b>: With these splines still selected, and the Move tool
+still active, type c to Copy and v to Paste. Hold down the Ctrl key to
+help restrict the current tool (in this case, the Move tool) to one axis.
+In the Back view, move the selected splines up until they are level with
+the tops of the red lines that define the breasts (<b><font color="#CC0000">Figure
+14</font></b>).
+<p><b>STEP 22</b>: Type h to bring up the Stretch tool (<b>Modify > Stretch
+> Stretch</b>). In both the Back and Right views, Stretch the selected
+splines until their edges touch the black lines of the model sheet.
+<p><b>STEP 23</b>: Deselect everything. Select the spline boundary immediately
+below and Stretch it until its edges touch the black lines of the model
+sheet. You should now have something that looks like <b><font color="#CC0000">Figure
+15</font></b>.
+<p><b>STEP 24</b>: Deselect everything. Select the splines of the arm circle.
+Type c and v to Copy and Paste it. Type t to activate the Move tool. In
+the Back view, move the still-selected original right above the edge of
+the widest spline ellipse. Type h to bring up the Stretch tool. In the
+Back view, Stretch the selected spline boundary until its top edge touches
+the black shoulder line of the model sheet and its bottom edge touches
+the widest of the spline ellipses (<b><font color="#CC0000">Figure 16</font></b>).
+<p><b>STEP 25</b>: These two spline ellipses almost join at the armpit.
+Let’s join them now. Deselect everything. Go into Point Selection Mode.
+In the Right view, select the lowest point of the innermost arm ellipse.
+In the Back view, select the “rightmost” point of the widest spline ellipse.
+Type Ctrl-w to Weld these two points into a single point (<b><font color="#CC0000">Figure
+17</font></b>).
+<p><b>STEP 26</b>: Time to work on the profile. In the Right view, in order
+from neck to waist, select the four points that lie on the black line that
+defines the front of the character (<b><font color="#CC0000">Figure 18</font></b>).
+Type Ctrl-p to create a spline.
+<p><b>STEP 27</b>: In the Right view, in order from neck to waist, select
+the four points that lie on the black line that defines the back of the
+character (<b><font color="#CC0000">Figure 19</font></b>). Type Ctrl-p
+to create a spline.
+<p><b>STEP 28</b>: In the Back view, in order from armpit to waist, select
+the three points that lie on the black line that defines the character’s
+left side. (Since you face the character, that actually means the line
+that defines the character’s side on your right, as shown in <b><font color="#CC0000">Figure
+20</font></b>). Type Ctrl-p to create a spline.
+<p>The neck circle is currently lying at the wrong angle. Originally we
+wanted it horizontal, so that we could make perfect horizontal and vertical
+copies of it for the waist and arm. Now, however, we need to rotate it
+so that it fits the contour of a real neck (higher in the back, lower in
+the front).
+<p><b>STEP 29</b>: Deselect everything. Select the circle of splines that
+defines the root of the neck. Type y to bring up the Rotate tool (<b>Modify
+> Rotate > Rotate</b>). In the Right view, move the cursor over the center
+point of the neck spline circle. Left-click on this point and drag to the
+right. On the black lines of the model sheet, note the “corner” where the
+neck joins the torso. Stop rotating the neck spline circle when its leftmost
+edge touches this corner. It should look like <b><font color="#CC0000">Figure
+21</font></b>.
+<p><b>STEP 30</b>: In Points Selection Mode, select the rightmost point
+of the neck spline circle in the Back view. Then (in order from left to
+right) select the topmost points of the arm spline circles (<b><font color="#CC0000">Figure
+22</font></b>). Type Ctrl-p to create a spline.
+<p><b>STEP 31</b>: While still in the Back view, select the lowest points
+on the two arm spline circles, and type Ctrl-p to create a spline (<b><font color="#CC0000">Figure
+23</font></b>.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Note</b>: Again, whenever you create a two-point spline for a spline
+cage, selection order does not matter. You can even right-click on the
+mouse and Lasso these two points, if you want.</td>
+</tr>
+</table>
+
+<p><b>STEP 32</b>: In the Top view, select the “lowest” two points of the
+arm circles (<b><font color="#CC0000">Figure 24</font></b>), and type Ctrl-p
+to create a spline. Then select the “topmost” two points of the arm circles
+(<b><font color="#CC0000">Figure 25</font></b>), and type Ctrl-p to create
+a spline.
+<p>The area bounded by the neck, shoulder, innermost arm spline circle,
+and breast-level spline ellipse poses a problem. This area is currently
+defined by six splines (six “sides”), instead of three or four.
+<p>Just as subdivision surfaces won’t accept anything other than three-
+and four-sided polygons, LightWave’s Spline Patch operation won’t accept
+anything other than three- and four-sided spline boundaries/patches. We
+must therefore add splines that break up this six-sided boundary into three-
+or four-sided boundaries.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Tip</b>: We can find some helpful examples in grade-school geometry,
+as seen in <b><font color="#CC0000">Figure 26</font></b>. When breaking
+up the following forms into the maximum number of quadrangles (four-sided
+shapes) and the fewest triangles:
+<p>Pentagon = quadrangle + triangle
+<br>Hexagon = two quadrangles
+<br>Heptagon = two quadrangles + triangle
+<br>Octagon = three quadrangles</td>
+</tr>
+</table>
+
+<p><b>STEP 33</b>: In the Top view, select the “lowest” point of the neck
+circle and the “lowest” point of the innermost arm circle (<b><font color="#CC0000">Figure
+27</font></b>). Type Ctrl-p to create a spline. Then select the “topmost”
+point of the neck circle and the the “topmost” point of the innermost arm
+circle (<b><font color="#CC0000">Figure 28</font></b>), and type Ctrl-p
+to create a spline.
+<p>Almost there, but some of the splines don’t quite match the black lines
+of the model sheet. We’ll fix that in the next step.
+<p><b>STEP 34</b>: In Points Selection Mode, deselect all points. Go to
+Polygon Selection Mode. In the Back view, select the spline that joins
+the lowest points of the arm circles. Activate the Add Points tool (if
+you have not yet added a hotkey for this, you’ll find it in <b>Polygon
+> Revise > Add Points</b>). In the Back view, left-click on the center
+of the spline. A new point should be added to the center of the spline.
+Figure <b><font color="#CC0000">Figure 29</font></b> demonstrates this
+procedure.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Tip</b>: I strongly recommend using a hotkey for Add Points. I personally
+prefer using the hotkey Ctrl-x for Add Points. That way, I can keep my
+left pinky held down on the Ctrl key and use my left index finger to type
+x and t, thus toggling between Add Points (Ctrl-x) and the Drag tool (Ctrl-t).</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Warning</b>: At the time of this writing, Add Points works unpredictably
+on splines in LightWave 6.5. If Add Points places the new point too close
+to another point, you may not be able to Drag the new point without also
+dragging the other point. If the new point lies too close to another point,
+type u (Undo) until the new point disappears and try Add Points again –
+this time clicking on a <i>slightly</i> different area of the spline.</td>
+</tr>
+</table>
+
+<p><b>STEP 35</b>: Select the spline that defines the left side of the
+torso. (<b><font color="#CC0000">Figure 30</font></b>) Right now it is
+made up of three points, giving it two sections. Add a point to the middle
+of each section using Add Points. Use the Drag tool to move each of these
+new points until the spline matches the shape of the black line defining
+the torso’s left side in the model sheet.
+<p><b>STEP 36</b>: Select the spline that defines the top of the left shoulder.
+(<b><font color="#CC0000">Figure 31</font></b>) Add a point to the middle
+of each section using Add Points. Use the Drag tool to move each new point
+until the spline follows the shape of the black line defining the shoulder.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Tip</b>: In this tutorial, don’t worry if the spline does not perfectly
+match the drawing. (<b><font color="#CC0000">Figure 31</font></b>) Pay
+attention first to the arcs the splines make in 3D space. The smoother
+and more rounded the arcs, the better the model will look when finished.
+You can always tweak the spline cage after it’s finished.</td>
+</tr>
+</table>
+
+<p><b>STEP 37</b>: Select the other two splines that connect the neck circle
+to the arm circle. (<b><font color="#CC0000">Figure 32</font></b>) To leave
+both of them perfectly straight would mean two odd “creases” in the model’s
+shoulders, because you would have two straight rows of points in the middle
+of curved rows of points. These two splines need to “go with the flow.”
+Add a point to the center of each spline using Add Points. In the Back
+View, use the Drag tool to drag the new points downwards, until the curve
+of these splines complements the downward curve of the shoulder spline.
+<p><b>STEP 38</b>: Now it looks good from the Back View, but the Right
+View suggests that the chest and back of the model will start to cave in
+towards the middle of these splines. In the Right View, Drag the new point
+of the front spline slightly towards the negative Z axis. Stop when it
+appears to lie midway between the edge of the arm circle and the front
+of the chest. Now to fix the back. Drag the new point of the back splines
+slightly towards the positive Z axis. Stop after it can be seen outside
+of the arm circle. It should look like Figure <b><font color="#CC0000">Figure
+32</font></b>.
+<p><b>STEP 39</b>: In the Right View, select the spline that defines the
+front of the chest. (<b><font color="#CC0000">Figure 33</font></b>) Add
+a point to its lowest section using Add Points. Use the Drag tool to move
+this new point until the spline matches the black line of the model sheet.
+<p><b>STEP 40</b>: In the Right View, select the spline that defines the
+spine. (<b><font color="#CC0000">Figure 34</font></b>). Add a point to
+its lowest section using Add Points. Use the Drag tool to move this new
+pont until the spline follows the black line of the model sheet.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Tip</b>: Because this tutorial will later have you patching this
+spline cage with 2-by-2 patches, having more than one “tweak point” per
+section of spline will not matter.</td>
+</tr>
+</table>
+
+<p><b>STEP 41</b>: Now for the neck. She could use a longer neck. Deselect
+all splines, then select the four splines that form the neck circle. Type
+c to Copy this geometry. Just so that it won’t accidentally get pasted
+on top of the original, go to an empty layer. Then type v to Paste a copy
+of the neck circle. Type t to bring up the Move tool. In the Right View,
+move the copy of the neck circle up and to the left until it lies inside
+the top of the model’s neck. (<b><font color="#CC0000">Figure 35</font></b>)
+Then type x to Cut the geometry out of this layer. Go to the original layer,
+and type v to Paste it.
+<p><b>STEP 42</b>: Now to connect this neck to the rest of the cage with
+splines. Enter Points Selection Mode. In the Right View select the “leftmost”
+point of each neck circle, and type Ctrl-p to create a spline. (<b><font color="#CC0000">Figure
+36</font></b>) Then select the “rightmost” point of each neck circle, and
+type Ctrl-p to create a spline. Finally, in the Back View, select the “rightmost”
+points of each neck circle, and type Ctrl-p to create a spline.
+<p><b>STEP 43</b>: That’s it. You’re done with the upper torso! Save this
+object as <b>torso03.lwo</b> (using “Save Object As” in the File menu,
+of course). …now you just need to build the hip section.
+<p><b>STEP 44</b>: It’ll be easier to work in a new empty layer, but you
+should first gather some raw materials. The hip connects to the bottom
+of this torso cage, so we’ll need a copy of the spline ellipse that defines
+the bottom of the torso cage. The outermost arm spline circle is a perfect
+circle that still lies in an orthogonal plane (unlike the neck circles,
+which have been Rotated, or the torso circles, which have been Stretched)
+– we can use copies of the arm circle to form the leg circles.
+<p>Go into Polygon Selection Mode. Deselect all splines. Move the mouse
+pointer near the outermost arm circle, and hold down the right mouse button
+so that you can use the Lasso. Lasso the outermost arm circle to select
+it, letting go of the right mouse button when you’re done. Hold down the
+Shift key so that you can select additional geometry. Select the four splines
+that define the bottom of the torso cage. Type c to Copy this geometry.
+Go into a new empty layer and type v to Paste the copied geometry into
+the new layer. It should look like <b><font color="#CC0000">Figure 37</font></b>.
+<p><b>STEP 45</b>: Zoom out a bit so that you can see the legs of the model
+sheet. Select the arm spline circle. Type Shift-t to bring up the Move
+tool, and Move the circle underneath the waist spline ellipse until the
+edge of the arm circle touches the corner of the model sheet’s crotch.
+(<b><font color="#CC0000">Figure 38</font></b>)
+<p><b>STEP 46</b>: Zoom in to the hip area. Select the arm circle (if it’s
+not selected already). In the Back View, move your mouse pointer over the
+lowest point of the arm circle, and type r to Rotate the arm circle a perfect
+90 degrees to the right.
+<p><b>STEP 47</b>: Type Shift-h to bring up the Size tool (<b>Modify >
+Stretch > Size</b>). In the Back View, place the mouse pointer over the
+“leftmost” point of the arm circle (which will from now on be referred
+to as the “leg” circle). Left-click and drag to the right until the right
+edge of the leg circle touches the outermost black line of the model sheet.
+(<b><font color="#CC0000">Figure 39</font></b>)
+<p><b>STEP 48</b>: Type Shift-t to bring up the Move tool. Go to the Right
+View. Hold down the Ctrl key to restrict movement to one axis, and Move
+the selected leg circle to the left until it lies between the black lines
+of the model sheet that define the leg. (<b><font color="#CC0000">Figure
+40</font></b>)
+<p><b>STEP 49</b>: Go to Points Selection Mode. In the Back View, select
+the “leftmost” point of the leg circle. Type c to Copy this point, and
+v to Paste it. The copy is lying right on top of the original point...but
+you have the original selected, not the copy. No problem. Deselect everything,
+type w to bring up Point Statistics (<b>Modeler > Windows > Statistics
+Open/Close</b>). Click on the “plus” sign next to the text string that
+says “0 Polygons.” All points in this layer that are not connected to any
+polygons at all will be selected. In this case, it’ll just be the one point
+that you copied and pasted. (<b><font color="#CC0000">Figure 41</font></b>)
+<p><b>STEP 50</b>: With this point selected, type Ctrl-v to bring up the
+Set Value tool (<b>Detail > Points > Set Value</b>). Set it to 0m on the
+X axis and click on OK. The point will snap to the X axis. (<b><font color="#CC0000">Figure
+42</font></b>)
+<p><b>STEP 51</b>: Leave this point selected. In the Back View, hold down
+the Shift key and select the “leftmost” point of the leg circle again.
+Type Ctrl-p to create a spline. (<b><font color="#CC0000">Figure 43</font></b>)
+<p><b>STEP 52</b>: In the Back View, select the “rightmost” points of both
+the waist and leg spline boundaries, and type Ctrl-p to create a spline.
+(<b><font color="#CC0000">Figure 44</font></b>)
+<p><b>STEP 53</b>: In the Back View, select the point that defines the
+center of the crotch. Then, holding down the Shift key in the Right View,
+select the “leftmost” point of the waist spline ellipse. Type Ctrl-p to
+create a spline. (<b><font color="#CC0000">Figure 45</font></b>)
+<p><b>STEP 54</b>: Return to the Back View. Again, select the point that
+defines the center of the crotch. Then, holding down the Shift key in the
+Right View, select the “rightmost” point of the waist spline ellipse. Type
+Ctrl-p to create a spline. (<b><font color="#CC0000">Figure 46</font></b>)
+<p><b>STEP 55</b>: Now we’ll get these three splines to better match the
+lines drawn on the model sheet. Enter Polygon Selection Mode. In the Right
+View, select the “leftmost” of the three new splines. Add three points
+to it with the Add Points tool, and use the Drag tool to drag these three
+new points until it matches the black line defining the front of the hip
+section. (<b><font color="#CC0000">Figure 47</font></b>)
+<p><b>STEP 56</b>: In the Back View, select the spline closest to the outside
+of the hip. Add one point to it with the Add Points tool, and use the Drag
+tool to drag the new point out until the spline follows the black line
+defining the outside of the hip. (<b><font color="#CC0000">Figure 48</font></b>)
+<p><b>STEP 57</b>: In the Right View, select the “rightmost” of the three
+new splines. Add three points to it with the Add Points tool. Use the Drag
+tool to drag these new points until the top part of the spline matches
+the top part of the black line, and the bottom part of the spline forms
+a nice arc inwards. (<b><font color="#CC0000">Figure 49</font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Technical Note</b>: Those who looked at <b>s-torso.lwo</b> earlier
+might have noticed that this spline forms the entire side of a patch. Since
+this spline cage will be patched with settings of 2-by-2 with Knots on
+each patch, the extra two “tweak points” in Step 73 may seem like a waste
+of geometry. Technically they are, since for a 2-by-2 operation all Knots
+will pay attention to are the points that form the corners and the center
+tweak point. (If no center tweak point exists, then Knots will treat the
+center between the two centermost points of the spline border as the center
+tweak point). The two extra points in Step 73 exist for:
+<ol TYPE=a>
+<li>
+future patch operations (in case you want to try this spline cage out at
+higher patch settings) and&nbsp;</li>
+
+<li>
+aesthetics – that spline just <i>looks</i> weird without an extra tweak
+point or two.</li>
+</ol>
+</td>
+</tr>
+</table>
+
+<p><b>STEP 58</b>: The hip section is starting to take shape. Now to give
+more shape to the rear. Enter Points Selection Mode. In the Right View,
+select the “rightmost” points of the waist spline ellipse and the leg circle,
+and type Ctrl-p to make a spline. (<b><font color="#CC0000">Figure 50</font></b>)
+<p><b>STEP 59</b>: Go to Polygon Selection Mode and select this new spline.
+Use the Add Points tool to add a point to it. In the Right View use the
+Drag tool to Drag the new point until the spline matches the shape of the
+black line defining the rear. In the Back View, hold down the Ctrl key
+and Drag the new point horizontally until the spline appears straight.
+(<b><font color="#CC0000">Figure 51</font></b>)
+<p>That’s it for the rear. The rear is now divided into two four-sided
+spline boundaries. The front, however…well, to put it tactfully, the front
+of the human hip area does not resemble the rear of the human hip area.
+To use more expressive language: one’s butt does not look like one’s crotch.
+<p>This part of the hip, then, needs a different “flow” of polygons, which
+means using a different spline structure. No problem.
+<p><b>STEP 60</b>: Deselect everything. In the Right View, select the spline
+that defines the front of the hip section. Type c to Copy it. Go to an
+empty layer and type v to Paste the copied geometry into the new layer.
+<p><b>STEP 61</b>: Go into Points Selection Mode. Select the bottom point,
+then type “ (the double-quotes key) to Invert your selection (<b>Display
+> Selection > Sel Invert</b>). Now everything but the lowest point should
+be selected.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Tip</b>: By not editing the lowest point, you won’t have to do any
+fancy Welding tricks to attach the lowest point to the center of the crotch,
+since both points currently have the same XYZ coordinates.</td>
+</tr>
+</table>
+
+<p><b>STEP 62</b>: Type y to bring up the Rotate tool. In the Back View,
+place your mouse pointer over the lowest point of the spline. Left-click
+and drag to the right until the spline appears to point to the rightmost
+corner of the waist. In the Right View, left-click on the lowest point
+again and drag slightly to the right to lift the points away from the front
+of the hip section. This will help keep the front of the hip section from
+looking unusually flat. (<b><font color="#CC0000">Figure 52</font></b>)
+<p><b>STEP 63</b>: Deselect everything. Type x to Cut this geometry out
+of this layer. Return to the layer containing the hip section, and type
+v to Paste this new spline on top of the hip section. Type m to Merge Points
+(<b>Construct > Reduce > Merge Points</b>). You should see “1 point eliminated.”
+(If not, chances are the lowest point of the new spline got moved somehow.
+Select the lowest point of the new spline, then select the point at the
+center of the crotch, and type Ctrl-w to Weld the two together).
+<p><b>STEP 64</b>: In the Right View, select the topmost point of the new
+spline. Then, in the Back View, select the “rightmost” point of the waist
+spline boundary. Type Ctrl-w to Weld these two points together into one
+point. (<b><font color="#CC0000">Figure 53</font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=1 WIDTH="100%" BGCOLOR="#CCFFFF" >
+<tr>
+<td><b>Tip</b>: For Weld, the order in which you select the points is important.
+Specifically, all points selected will snap to the XYZ coordinates of the
+<b>last</b>
+point you select.</td>
+</tr>
+</table>
+
+<p><b>STEP 65</b>: Go to Polygon Selection Mode. Select the newest spline.
+In the Back View, use the Drag tool to move the three inner (“tweak”) points
+of this spline to the right, so that this line better resembles the contour
+dividing the front of the leg from the front of the hip. (Or the cut of
+a ladies’ swimsuit, take your pick). (<b><font color="#CC0000">Figure 54</font></b>)
+<p>Almost there. We have the contours defined, but everything needs to
+be made up of three- or four-sided patches. The crotch spline, the “swimsuit”
+spline, the two front splines of the leg circle, and the outermost hip
+spline form a five-sided boundary. We could merge the two front splines
+of the leg circle into one spline, and make a mental note&nbsp; to patch
+that section (and the “swimsuit” section next to it) with 4-by-2 patches.
+<p>Or we could add a spline that splits the would-be 4-by-2 patch into
+two 2-by-2 patches. Let’s do that now.
+<p><b>STEP 66</b>: In Points Selection Mode, deselect all points. In the
+Back View, select the middle point of the “swimsuit” spline. In the Right
+View, select the “leftmost” point of the leg circle and type Ctrl-p to
+make a spline. (<b><font color="#CC0000">Figure 55</font></b>)
+<p><b>STEP 67</b>: In the Right View, select the center points of the “swimsuit”
+spline and the spline that defines the front of the hip section. Type Ctrl-p
+to make a spline. (<b><font color="#CC0000">Figure 56</font></b>)
+<p>One final touch. Notice that on the model sheet, the legs angle outwards
+from the hip. Since the leg circle forms the root of the leg, it ought
+to do the same.
+<p><b>STEP 68</b>: In Polygon Selection Mode, deselect everything, then
+select the leg circle. Type y to bring up the Rotate tool. In the Back
+View, place the mouse pointer over the “leftmost” point of the leg circle.
+Left-click and drag to the left slightly, raising the outer edge of the
+leg circle. Rotate about ten degrees, then stop.
+<p>You have just completed the hip section! Now you must attach it to the
+torso.
+<p><b>STEP 69</b>: Go into Polygon Selection Mode and deselect everything.
+Now select just those four splines that define the waist (in the shape
+of an ellipse). Type the “ key (the double-quotes key) to invert your selection.
+Type c to Copy this geometry. Return to the layer that contains your upper
+torso section. Type v to Paste the geometry.
+<p><b>STEP 70</b>: Type m to Merge Points. It should say “3 points eliminated.”
+If less than three points were eliminated, check those points where the
+hip splines join the waist spline. If what should be one point turns out
+to be two points, Weld them together.
+<p>This spline cage defines only half of the torso. Once patched, the patches
+will be mirrored on the X axis. Then the points along the “seam” will be
+merged. If the points along the seam lie right on top of each other, then
+they can be merged with little fuss.
+<p><b>STEP 71</b>: To make sure that the patches generated by this spline
+cage can be Mirrored-and-Merged successfully, select all splines that lie
+on the YZ plane, type Ctrl-v to bring up Set Value, choose 0m on the X
+axis and click OK. The splines that lie on the YZ plane are:
+<ol>
+<li>
+the spine</li>
+
+<li>
+the front of the chest</li>
+
+<li>
+the front of the neck</li>
+
+<li>
+the back of the neck</li>
+
+<li>
+the front of the hip</li>
+
+<li>
+the back of the hip</li>
+</ol>
+
+<p><br>The spline cage should now look like <b><font color="#CC0000">Figure
+57</font></b>.
+<p>One more thing. The hip currently has an interesting spline patching
+problem, involving the area bordered by the waist spline, the front center
+spline, the “swimsuit” spline, and the “divider” spline added in Step 83.
+Depending on which spline is selected first, the Patch operation will either
+work or it will tell you “Curves do not cross correctly.”
+<p>This is because the front center spline and the “swimsuit” spline share
+a point at the crotch, past the “divider” spline. A Patch-able spline boundary
+must be made up of three or four splines, joined at the corners – but the
+Patch operation may get confused as to which “corners” it should be using.
+<p>The fix is to make it clear to the Patch operation where each spline
+ends. We’ll use the Split tool.
+<p><b>STEP 72</b>: In Points Selection Mode, select the two points that
+form the “divider” spline of Step 83. Enter Polygon Selection Mode and
+deselect everything. In the Right View, select the front hip spline and
+the “swimsuit” spline. Type Ctrl-l (that’s a lowercase “L”) to Split these
+splines at the points selected in Points Selection Mode.
+<p>The angles at the points where these splines have been Split look a
+little too sharp. Since this spline cage will be Patched with low-resolution,
+2-by-2 patches, this sharpness could be left alone. However, for aesthetic
+reasons (and future spline patching), they ought to be Smoothed over. If
+you try Smooth them all at once, though, you will get unwanted Smoothing
+where the lower two splines join together at the center of the crotch.
+It’s better to Smooth one pair at a time.
+<p><b>STEP 73</b>: Deselect the two splines that now form the “swimsuit”
+spline. Type Ctrl-s to Smooth the remaining two selected splines. Deselect
+everything, reselect the two splines that form the “swimsuit” spline, and
+type Ctrl-s to Smooth.
+<p><b>STEP 74</b>: Save this object right now as <b>torso04.lwo</b>.
+</body>
+</html>

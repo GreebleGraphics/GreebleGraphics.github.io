@@ -1,0 +1,134 @@
+The Torso - Hand Construction
+
+This part of the tutorial will tell you how to build a hand. The next part will tell you how to attach it.
+
+STEP 1: Load torso11.lwo into Modeler (if you did not follow the previous tutorial sections and just want to practice building a hand, you may load torso11.lwo off the CD-ROM). 
+
+STEP 2: Go to an empty layer. Zoom in on the region of the model sheet that displays the left hand. Set the Perspective view window to "Wireframe Shade."
+
+Note: People unfamiliar with the interactive Box tool should follow Steps 221-225. More experienced modelers may skip to Step 226 after creating a box that looks like the one in Figure 10-144 - 3x1x3 segments, about the size of the palm of the hand.
+
+STEP 3: Type Shift-x to activate the Box tool. (Create > Objects > Box). In the Back View, left-click on the top of the wrist, hold down the left mouse button and drag down and to the right. When the bottom of the box touches the bottom of the wrist and the rightmost edge of the box touches the base of the fingers, let go of the left mouse button.
+
+Note: Notice the blue highlights on the edges of the box. You can still adjust the dimensions of this box by left-clicking and dragging any of these highlights. You can also adjust the placement of this box by left-clicking and dragging on the blue crosshairs in the center of the box.
+
+Right now this "box" is a two-dimensional plane. Let's add some depth to it. 
+
+STEP 4: In the Right View, left-click on the center of the box, hold down the left mouse button and drag to the right. The box will now have gained depth. Keep dragging the right side of the box until it touches the black circle that defines the root of the arm on the model sheet. 
+
+STEP 5: In the Right View, Left-click on the center of the leftmost side of the box, hold down the left mouse button and drag to the left until it, too, touches the black circle that defines the root of the arm on the model sheet.
+
+You now have a box that's about the right size for the volume of the elf-girl's palm, but we'll be using Bevel to create her fingers and thumb. Before you "set" this box, you must make one final adjustment: the number of segments that define each side of this box.
+
+STEP 6: In the tradition of Elfquest, this elf-girl will have three fingers. Move your mouse pointer over the Top View and leave it there. On your keyboard, tap the "up" arrow key twice. You should have increased the number of segments along the Z axis by 2, making for a total of three segments.
+
+STEP 7: Let's not forget to make "room" for the thumb. With your mouse pointer still in the Top View, tap the "right" arrow key twice. The number of segments along the X axis should now be three, and the box should look like Figure 10-144.
+
+STEP 8: Type Ctrl-t to activate the Drag tool. (Notice that as soon as you activated another modeling tool, the box lost its interactive highlights - it is now "set" in Modeler). In the Top View, Drag the points of the left corners of the box in slightly towards the center, to make the end of the box look more "rounded." (Figure 10-145)
+
+STEP 9: In the Top View, select the three polygons that form the rightmost side of this box. Type b to activate the Bevel tool (Multiply > Extend > Bevel). We are only going to create the root of the fingers right now. Left-click and drag slightly to the right to shift these selected polygons slightly away from the palm of the hand. Then drag slightly down to shrink these polygons slightly - just enough to separate each from the other two. (Figure 10-146)
+
+Like the Box tool, the Bevel tool's effects are still "tweakable" at this stage. They will not be set in stone until you:
+
+a) deactivate Bevel
+b) select another tool, or
+c) select/reselect another editing mode (ie: Points/Polygons/Volume Selection mode)
+
+STEP 10: Type b again to deactivate the Bevel tool, and to leave its effect in place.
+
+Note: The closer these polygons are to the palm, the tighter the spaces between the fingers will be when the faces of the hand are converted into SubPatch surfaces. Remember that the closer that two points lie together, the tighter the curve running through those two points will be, whether you deal with splines or SubPatch surfaces.
+
+STEP 11: It can't hurt to start applying weight maps at this stage. Set the Perspective View window's display type to "Weight Shade."
+
+STEP 12: Deselect everything. Of the three polygons that you beveled in Step 227, select the lowest one in the Top View - the root of the index finger. From the drop-down list next to the W, T, and M buttons in the lower right-hand corner of Modeler, select "(new)" to activate the Create Weight Map tool. Give this weight map a name of "Left Index Finger" with an Initial Value of 100.0%, and click on "OK." It should look like Figure 10-147.
+
+STEP 13: Deselect everything. Select the middle of the three polygons that you beveled in Step 227 - the root of the middle finger. Create a weight map called "Left Mid Finger" with an Initial Value of 100.0% for the points of this selected polygon. (Figure 10-148)
+
+STEP 14: Deselect everything. Select the last of the three polygons that you had beveled in Step 227 - the root of the pinky finger. Create a weight map called "Left Pinky" with an Initial Value of 100.0% for the points of the selected polygon. (Figure 10-149)
+
+STEP 15: Let's grow some fingers. Select the three polygons that you just weight-mapped in the previous three steps. Type b to activate the Bevel tool. Use this tool to grow the rough shapes of fingers, as seen in Figure 10-150, by left-clicking on the selected geometry and dragging to the right (and slightly downwards, to taper the fingers in the Top view).
+
+STEP 16: Leave these polygons selected. Let's give these rough "fingers" a bit of taper in the Back View. Type h to activate the Stretch tool. In the Back View, left-click on the bottom of the polygons, hold down the Ctrl key to restrict movement to one axis, and drag the mouse pointer downwards until it looks like Figure 10-151.
+
+STEP 17: Deselect everything. Type Shift-k to activate the Knife tool. In the Back View, make two cuts in the fingers - one cut for each finger joint. It should look like the first panel of Figure 10-152.
+ 
+STEP 18: Deselect everything. In the Back View, select the points that form the bottom of the roots of the fingers. Type t to activate the Move tool, and move them up until they touch the black line that defines the top of the thumb in the model sheet. (Figure 10-152)
+
+STEP 19: These fingers need more geometry if they are going to have a chance of maintaining their volume when bending. Deselect everything. In the Back View, use the Knife tool to make two cuts on each side of the "lines" that define the joints. (Figure 10-153)
+
+STEP 20: We're going to grow the thumb next, but we should first refine the shape of the palm for it. In the Top View, select the polygon that will become the root of the thumb. Type y to activate the Rotate tool. In the Top View, move the mouse pointer over the rightmost edge of the polygon, left-click and drag to the left until the polygon lies at a 45-degree angle. (Figure 10-154)
+
+STEP 21: Leave this polygon selected. Use the Bevel tool to grow a rough thumb, as seen in Figure 10-155.
+
+STEP 22: Select the entire geometry of this rough thumb, and create a weight map called "Left Thumb" with an Initial Value of 100.0%. (Figure 10-156)
+
+STEP 23: In the Top View, use the Knife tool to make three cuts across the center of the thumb - one for the joint of the thumb, and one on either side of that "joint" cut to help the thumb keep its volume when bent. (Figure 10-157)
+
+STEP 24: One last weight map. Deselect everything, then select the polygons that form the palm. Create a weight map called "Left Hand" with an Initial Value of 100.0%. It should look like Figure 10-158.
+
+STEP 25: Let's see how this looks as a SubPatch cage. Deselect everything and hit the Tab key. We've already created our weight maps, so set the Perspective View display type to Wireframe Shade. (Figure 10-159)
+
+STEP 26: Before we distort this cage further, we ought to surface it while it's still easy to select surfaces. With everything deselected, type q to bring up the Change Surface  dialog box. In the Name box, type "Kara Glove." Leave the "Set Initial Color" box checked, and check the "Smoothing" checkbox. Double-click on the gray box to the right of the Color values to set a specific color, and set the Color to a brown color for now (such as RGB 128 064 000). (Figure 10-160) Click on OK to apply this surface to the entire hand object.
+
+STEP 27: The model sheet shows the character wearing fingerless gloves. Select the SubPatches shown in Figure 10-161, type q to activate the Change Surface dialog box, and assign a surface called "Kara Skin," with Smoothing turned on and Color values that resemble pale skin for now (such as RGB 204 183 167). (Figure 10-161)
+
+STEP 28: The model sheet also shows trim on the fingerless gloves. Deselect everything, select the SubPatches shown in Figure, and assign a surface called "Kara Glove Trim." Make this surface's Color yellow for now, (such as RGB 220 160 000), with Smoothing turned on. (Figure 10-162)
+
+STEP 29: Time to distort this object into more of a hand shape. First, the fingertips should have more of a "slant" at their bottoms. Deselect everything. In the Back View, select the points at the bottom of the fingertips. Move these points towards the palm until the finger tips have more of a taper, as seen in Figure 10-163.
+
+STEP 30: Deselect everything and select the polygons that form the middle finger. Use the Stretch tool at the base of this finger to lengthen it, until the lines of its SubPatch surfaces touch the black lines of the model sheet. (Figure 10-165).
+
+STEP 31: Deselect everything and then select the polygons that form the pinky. Use the Stretch tool at its base to shorten it slightly, until it looks like Figure 10-166.
+
+The index and pinky fingers ought to have room to "spread out" when rotated by their bones. Right now, however, their weight maps currently have no control over any of the points of the palm. When the fingers spread out right now, there's a risk of "crimping" happening at the outer edges of the pinky and index fingers (since the palm points, unaffected by the index and pinky bones, will remain fixed as the points of the index and pinky rotate past them).
+
+We could give the weight maps of the pinky and index fingers co-ownership of these points, but that might cause problems, too, as the outer points might then rotate into the palm as the fingers spread out. (They wouldn't rotate as much as the finger points, since the palm bones, having co-ownership, would fight to keep them fixed...but they would probably still rotate inwards, slightly).
+
+Let's see how far we can get by just moving the four closest palm points out of the way. Instead of giving the index and pinky fingers co-ownership of the palm points, we'll just give the index and pinky what they truly need - some "breathing room."
+
+STEP 32: Deselect everything. Select the points shown in the first panel of Figure 10-166, and Move them towards the wrist. Pay attention to the SubPatch lines connecting these points to the inner spaces between the fingers. When these lines form 30-degree angles in relation to the base of the index and pinky fingers, stop moving the points. (30 degrees will probably be the farthest the index and pinky fingers will spread out). (Figure 10-166)
+
+STEP 33: Now to refine the thumb. Deselect everything. In the Top View, select the points shown in Figure 10-167 and Move them inwards, to give the thumb more of a taper.
+
+This thumb ought to hang down at a 30-degree angle, but Rotating it to that angle in the Top, Back, or Right Views would be difficult. Happily, we can use Modeler's tools in the Perspective View.
+
+STEP 34: Select the polygons of the thumb. Rotate the Perspective View until the selected edges of the sides the thumb line up with each other. When they do, chances are good that the sides of the root of the thumb are now perpendicular to you. Type y to activate the Rotate tool, place the mouse pointer over the root of the thumb (the spot where the base thumb bone would be), and Rotate the selected polygons until the tip of the thumb touches the black lines defining the bottom of the thumb in the Back View. (Figure 10-168)
+
+STEP 35: Save this object as torso12.lwo.
+
+
+The Torso - Hand Attachment
+
+STEP 36: Load torso12.lwo into Modeler (if you did not follow the previous tutorial sections and just want to practice attaching a hand to an arm, you may load torso12.lwo off the CD-ROM).
+
+STEP 37: If the hand looks like it's the wrong size or in the wrong position in relation to the body, select its polygons and Move and Size it to your taste.
+
+STEP 38: If it looks good to you, go to the layer that contains the hand object. Deselect everything. Type c to Copy its geometry. Go to the body layer and type v to Paste a copy of the hand geometry into the same layer.
+
+STEP 39: Hit the Tab key to turn everything back into faces, to make the geometry easier to see (and thus, easier to manipulate).
+
+STEP 40: Select the polygons at the stump of the arm, and Move them back slightly, to put some distance between them and the hand. (Figure 10-169)
+
+STEP 41: Leaving them selected, type the equal sign key ("=") to Hide all unselected geometry. (Figure 10-170)
+
+STEP 42: Leaving them selected, use the Drag tool in the Right View to get the points of the stump of the left hand to match the shape of the points of the stump of the left arm. (Figure 10-171)
+
+STEP 43: (Still) leaving them selected, type Shift-z to Merge them into two (weird-looking) polygons. Don't worry about the aesthetics of these (weird-looking!) polygons - they are merely the means to an end. (Figure 10-172)
+
+STEP 44: Leaving these polygons selected, type f to Flip them to face away from each other. (Figure 10-173)
+
+STEP 45: (Still!) leaving them selected, activate Create Skin from Multiply > Extend > More > Create Skin. (Figure 10-174)
+
+About Create Skin: Create Skin will do its best to connect two polygons with triangles, but a literal-minded computer can only do so much. By moving the points of the stump of the left hand into the shape of the points of the stump of the left arm in Step 260, you helped Create Skin figure out which points are supposed to be connected to each other.
+
+STEP 46: Type x to Cut out the selected polygons, leaving the newly created geometry behind.
+
+STEP 47: In the Perspective View, select two adjacent triangles, type Shift-z to Merge them into a single quad polygon, and deselect them. Do this to the rest of the adjacent triangles, one pair at a time, until you have something that looks like Figure 10-175.
+
+STEP 48: Deselect everything. In Points Selection Mode, type w to bring up Point Statistics. (Figure 10-176) Click on the plus sign next to "0 Polygons" to select that one leftover point from the center of the arm stump, the point that doesn't belong to any polygons anymore. Put it out of its misery by typing x to Cut it out of existence. (Figure 10-177)
+
+STEP 49: Type q to bring up Change Surface. You already have a surface named "Kara Glove." Click on the arrow button next to "Name" to select this surface from a drop-down list, and click on "OK."
+
+STEP 50: Type the backslash key ("\") to Unhide all geometry. Type the Tab key to see how it looks.
+
+STEP 51: Not bad. (Figure 10-178) Save this object as torso13.lwo.

@@ -1,0 +1,223 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (WinNT; I) [Netscape]">
+   <meta name="Author" content="Jennifer Hachigian">
+   <title>2.6 -- The Torso</title>
+<link REL=StyleSheet HREF="../../style.css" TYPE="text/css">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" vlink="#800080" alink="#0000FF">
+
+<h3>
+The Torso – Spline Cage (Pt. 5)</h3>
+<b>STEP 58</b>: The hip section is starting to take shape. Now to give
+more shape to the rear. Enter Points Selection Mode. In the Right View,
+select the “rightmost” points of the waist spline ellipse and the leg circle,
+and type Ctrl-p to make a spline. (<b><font color="#CC0000"><a href="Fig050.gif">Figure
+50</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig050.gif"><img SRC="small/s_Fig050.GIF" ALT="Figure 50" NOSAVE BORDER=1 height=76 width=200></a>
+<br><b>Figure 50</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig051.gif"><img SRC="small/s_Fig051.GIF" ALT="Figure 51" NOSAVE BORDER=1 height=161 width=200></a>
+<br><b>Figure 51</b></td>
+</tr>
+</table>
+
+<p><b>STEP 59</b>: Go to Polygon Selection Mode and select this new spline.
+Use the Add Points tool to add a point to it. In the Right View use the
+Drag tool to Drag the new point until the spline matches the shape of the
+black line defining the rear. In the Back View, hold down the Ctrl key
+and Drag the new point horizontally until the spline appears straight.
+(<b><font color="#CC0000"><a href="Fig051.gif">Figure 51</a></font></b>)
+<p>That’s it for the rear. The rear is now divided into two four-sided
+spline boundaries. The front, however…well, to put it tactfully, the front
+of the human hip area does not resemble the rear of the human hip area.
+To use more expressive language: one’s butt does not look like one’s crotch.
+<p>This part of the hip, then, needs a different “flow” of polygons, which
+means using a different spline structure. No problem.
+<p><b>STEP 60</b>: Deselect everything. In the Right View, select the spline
+that defines the front of the hip section. Type c to Copy it. Go to an
+empty layer and type v to Paste the copied geometry into the new layer.
+<p><b>STEP 61</b>: Go into Points Selection Mode. Select the bottom point,
+then type “ (the double-quotes key) to Invert your selection (<b>Display
+> Selection > Sel Invert</b>). Now everything but the lowest point should
+be selected.
+<p>
+<hr SIZE=1 WIDTH="100%">
+<blockquote><b>Tip</b>: By not editing the lowest point, you won’t have
+to do any fancy Welding tricks to attach the lowest point to the center
+of the crotch, since both points currently have the same XYZ coordinates.</blockquote>
+
+<hr SIZE=1 WIDTH="100%">
+<p><b>STEP 62</b>: Type y to bring up the Rotate tool. In the Back View,
+place your mouse pointer over the lowest point of the spline. Left-click
+and drag to the right until the spline appears to point to the rightmost
+corner of the waist. In the Right View, left-click on the lowest point
+again and drag slightly to the right to lift the points away from the front
+of the hip section. This will help keep the front of the hip section from
+looking unusually flat. (<b><font color="#CC0000"><a href="Fig052.gif">Figure
+52</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig052.gif"><img SRC="small/s_Fig052.GIF" ALT="Figure 52" NOSAVE BORDER=1 height=163 width=200></a>
+<br><b>Figure 52</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig053.gif"><img SRC="small/s_Fig053.GIF" ALT="Figure 53" NOSAVE BORDER=1 height=161 width=200></a>
+<br><b>Figure 53</b></td>
+</tr>
+</table>
+
+<p><b>STEP 63</b>: Deselect everything. Type x to Cut this geometry out
+of this layer. Return to the layer containing the hip section, and type
+v to Paste this new spline on top of the hip section. Type m to Merge Points
+(<b>Construct > Reduce > Merge Points</b>). You should see “1 point eliminated.”
+(If not, chances are the lowest point of the new spline got moved somehow.
+Select the lowest point of the new spline, then select the point at the
+center of the crotch, and type Ctrl-w to Weld the two together).
+<p><b>STEP 64</b>: In the Right View, select the topmost point of the new
+spline. Then, in the Back View, select the “rightmost” point of the waist
+spline boundary. Type Ctrl-w to Weld these two points together into one
+point. (<b><font color="#CC0000"><a href="Fig053.gif">Figure 53</a></font></b>)
+<p>
+<hr SIZE=1 WIDTH="100%">
+<blockquote><b>Tip</b>: For Weld, the order in which you select the points
+is important. All welded points will snap to the XYZ coordinates of the
+<b>last</b>
+point selected.</blockquote>
+
+<hr SIZE=1 WIDTH="100%">
+<p><b>STEP 65</b>: Go to Polygon Selection Mode. Select the newest spline.
+In the Back View, use the Drag tool to move the three inner (“tweak”) points
+of this spline to the right, so that this line better resembles the contour
+dividing the front of the leg from the front of the hip. (Or the cut of
+a ladies’ swimsuit, take your pick). (<b><font color="#CC0000"><a href="Fig054.gif">Figure
+54</a></font></b>)
+<p><a href="Fig054.gif"><img SRC="small/s_Fig054.GIF" ALT="Figure 54" NOSAVE BORDER=1 height=162 width=200></a>
+<br><b>Figure 54</b>
+<p>Almost there. We have the contours defined, but everything needs to
+be made up of three- or four-sided patches. The crotch spline, the “swimsuit”
+spline, the two front splines of the leg circle, and the outermost hip
+spline form a five-sided boundary. We could merge the two front splines
+of the leg circle into one spline, and make a mental note&nbsp; to patch
+that section (and the “swimsuit” section next to it) with 4-by-2 patches.
+<p>Or we could add a spline that splits the would-be 4-by-2 patch into
+two 2-by-2 patches. Let’s do that now.
+<p><b>STEP 66</b>: In Points Selection Mode, deselect all points. In the
+Back View, select the middle point of the “swimsuit” spline. In the Right
+View, select the “leftmost” point of the leg circle and type Ctrl-p to
+make a spline. (<b><font color="#CC0000"><a href="Fig055.gif">Figure 55</a></font></b>)
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
+<tr>
+<td VALIGN=BOTTOM><a href="Fig055.gif"><img SRC="small/s_Fig055.GIF" ALT="Figure 55" NOSAVE BORDER=1 height=162 width=200></a>
+<br><b>Figure 55</b></td>
+
+<td VALIGN=BOTTOM><a href="Fig056.gif"><img SRC="small/s_Fig056.GIF" ALT="Figure 56" NOSAVE BORDER=1 height=161 width=200></a>
+<br><b>Figure 56</b></td>
+</tr>
+</table>
+
+<p><b>STEP 67</b>: In the Right View, select the center points of the “swimsuit”
+spline and the spline that defines the front of the hip section. Type Ctrl-p
+to make a spline. (<b><font color="#CC0000"><a href="Fig056.gif">Figure
+56</a></font></b>)
+<p>One final touch. Notice that on the model sheet, the legs angle outwards
+from the hip. Since the leg circle forms the root of the leg, it ought
+to do the same.
+<p><b>STEP 68</b>: In Polygon Selection Mode, deselect everything, then
+select the leg circle. Type y to bring up the Rotate tool. In the Back
+View, place the mouse pointer over the “leftmost” point of the leg circle.
+Left-click and drag to the left slightly, raising the outer edge of the
+leg circle. Rotate about ten degrees, then stop.
+<p>You have just completed the hip section! Now you must attach it to the
+torso.
+<p><b>STEP 69</b>: Go into Polygon Selection Mode and deselect everything.
+Now select just those four splines that define the waist (in the shape
+of an ellipse). Type the “ key (the double-quotes key) to invert your selection.
+Type c to Copy this geometry. Return to the layer that contains your upper
+torso section. Type v to Paste the geometry.
+<p><b>STEP 70</b>: Type m to Merge Points. It should say “3 points eliminated.”
+If less than three points were eliminated, check those points where the
+hip splines join the waist spline. If what should be one point turns out
+to be two points, Weld them together.
+<p>This spline cage defines only half of the torso. Once patched, the patches
+will be mirrored on the X axis. Then the points along the “seam” will be
+merged. If the points along the seam lie right on top of each other, then
+they can be merged with little fuss.
+<p><b>STEP 71</b>: To make sure that the patches generated by this spline
+cage can be Mirrored-and-Merged successfully, select all splines that lie
+on the YZ plane, type Ctrl-v to bring up Set Value, choose 0m on the X
+axis and click OK. The splines that lie on the YZ plane are:
+<ol>
+<li>
+the spine</li>
+
+<li>
+the front of the chest</li>
+
+<li>
+the front of the neck</li>
+
+<li>
+the back of the neck</li>
+
+<li>
+the front of the hip</li>
+
+<li>
+the back of the hip</li>
+</ol>
+
+<p><br>The spline cage should now look like <b><font color="#CC0000"><a href="Fig057.gif">Figure
+57</a></font></b>.
+<p><a href="Fig057.gif"><img SRC="small/s_Fig057.GIF" ALT="Figure 57" NOSAVE BORDER=1 height=151 width=200></a>
+<br><b>Figure 57</b>
+<p>One more thing. The hip currently has an interesting spline patching
+problem, involving the area bordered by the waist spline, the front center
+spline, the “swimsuit” spline, and the “divider” spline added in Step 67.
+Depending on which spline is selected first, the Patch operation will either
+work or it will tell you “Curves do not cross correctly.”
+<p>This is because the front center spline and the “swimsuit” spline share
+a point at the crotch, past the “divider” spline. A Patch-able spline boundary
+must be made up of three or four splines, joined at the corners – but the
+Patch operation may get confused as to which “corners” it should be using.
+<p>The fix is to make it clear to the Patch operation where each spline
+ends. We’ll use the Split tool.
+<p><b>STEP 72</b>: In Points Selection Mode, select the two points that
+form the “divider” spline of Step 67. Enter Polygon Selection Mode and
+deselect everything. In the Right View, select the front hip spline and
+the “swimsuit” spline. Type Ctrl-l (that’s a lowercase “L”) to Split these
+splines at the points selected in Points Selection Mode.
+<p>The angles at the points where these splines have been Split look a
+little too sharp. Since this spline cage will be Patched with low-resolution,
+2-by-2 patches, this sharpness could be left alone. However, for aesthetic
+reasons (and future spline patching), they ought to be Smoothed over. If
+you try Smooth them all at once, though, you will get unwanted Smoothing
+where the lower two splines join together at the center of the crotch.
+It’s better to Smooth one pair at a time.
+<p><b>STEP 73</b>: Deselect the two splines that now form the “swimsuit”
+spline. Type Ctrl-s to Smooth the remaining two selected splines. Deselect
+everything, reselect the two splines that form the “swimsuit” spline, and
+type Ctrl-s to Smooth.
+<p><b>STEP 74</b>: Save this object right now as <b>torso04.lwo</b>.
+<br>&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=3 >
+<tr>
+<td><a href="torso2d.htm">Previous Page</a></td>
+
+<td><a href="../../contents.htm">Table of Contents</a></td>
+
+<td><a href="torso3.htm">Next Page</a></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+</body>
+</html>
