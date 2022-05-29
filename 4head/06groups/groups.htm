@@ -10,29 +10,29 @@
 <body text="#000000" bgcolor="#FFFFFF" link="#FF0000" vlink="#800080" alink="#0000FF">
 
 <h3>
-The Head – Detailing Stage 1 (Surfacing and Point Groups)</h3>
+The Head -- Detailing Stage 1 (Surfacing and Point Groups)</h3>
 <b>STEP 1</b>: Load <b>head05.lwo</b> into Modeler. (If you did not follow
 the steps in the previous section and just want surfacing and point naming
 experience, you may load <b>head05.lwo</b> from the CD-ROM).
 <p><b>STEP 2</b>: Go to the layer that contains the faces of the head.
-Set the Perspective View display type to “Wireframe Shade.”
-<p><b>STEP 3</b>: Type q to bring up the “Change Surface” panel. Assign
-a surface called “Kara Face” to everything, with Smoothing turned on and
+Set the Perspective View display type to "Wireframe Shade."
+<p><b>STEP 3</b>: Type q to bring up the "Change Surface" panel. Assign
+a surface called "Kara Face" to everything, with Smoothing turned on and
 the same color values as the face and skin surfaces of the body (such as
 RGB 204 183 167).
 <p><b>STEP 4</b>:&nbsp; Now for the hair. Hit the Tab key to convert everything
-to SubPatches – we need a better idea of where the “hairline” should fall.
+to SubPatches -- we need a better idea of where the "hairline" should fall.
 <p><b>STEP 5</b>:&nbsp; Select the polygons shown in <b><font color="#CC0000"><a href="Fig001.gif">Figure
-1</a></font></b>. Give them a surface called “Kara Hair,” with Smoothing
+1</a></font></b>. Give them a surface called "Kara Hair," with Smoothing
 turned on and a yellow color for now (such as RGB 179 171 098).
 <p><a href="Fig001.gif"><img SRC="small/s_Fig001.GIF" ALT="Figure 1" NOSAVE BORDER=1 height=151 width=200></a>
 <br><b>Figure 1</b>
-<p>Not as…elegant as it could be, no? We need a nice diagonal line of SubPatches
+<p>Not as...elegant as it could be, no? We need a nice diagonal line of SubPatches
 to get a nice diagonal hairline. We could try using Spin Quads to get our
-diagonal lines…but we can also try a more direct approach.
+diagonal lines...but we can also try a more direct approach.
 <p><b>STEP 6</b>: Select all polygons, then go into Points Selection Mode.
-Select the four points on the tip of each “staircase” SubPatch, and type
-Ctrl-l (that’s a lowercase “L”) to Split the selected geometry along these
+Select the four points on the tip of each "staircase" SubPatch, and type
+Ctrl-l (that's a lowercase "L") to Split the selected geometry along these
 points. (<b><font color="#CC0000"><a href="Fig002.gif">Figure 2</a></font></b>)
 <br>&nbsp;
 <table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
@@ -46,17 +46,17 @@ points. (<b><font color="#CC0000"><a href="Fig002.gif">Figure 2</a></font></b>)
 </table>
 
 <p><b>STEP 7</b>: Select the triangle SubPatches that border the hairline
-and assign the “Kara Hair” surface to them. It should look like <b><font color="#CC0000"><a href="Fig003.gif">Figure
+and assign the "Kara Hair" surface to them. It should look like <b><font color="#CC0000"><a href="Fig003.gif">Figure
 3</a></font></b>.
-<p>That’s about as much surfacing as can be done for now. Let’s move on
+<p>That's about as much surfacing as can be done for now. Let's move on
 to point selection groups. This will make it easier to select the points
 that we want for morph targets later on.
 <p><b>STEP 8</b>: Go into Point Selection Mode and deselect everything.
 Hit the Tab key to convert everything back into polygons. Select just those
 ten points that border the eye. Then go to <b>Display > Grouping > Point
-Selection Sets</b> to bring up the Point Selection Sets panel. Enter “Kara
-Eye” for the Point Set name, leave “Remove Points” unchecked (we want to
-mark these points as part of a group, not “unmark” them), and click on
+Selection Sets</b> to bring up the Point Selection Sets panel. Enter "Kara
+Eye" for the Point Set name, leave "Remove Points" unchecked (we want to
+mark these points as part of a group, not "unmark" them), and click on
 OK. (<b><font color="#CC0000"><a href="Fig004.gif">Figure 4</a></font></b>)
 <p><a href="Fig004.gif"><img SRC="small/s_Fig004.GIF" ALT="Figure 4" NOSAVE BORDER=1 height=151 width=200></a>
 <br><b>Figure 4</b>
@@ -64,31 +64,31 @@ OK. (<b><font color="#CC0000"><a href="Fig004.gif">Figure 4</a></font></b>)
 <hr SIZE=1 WIDTH="100%">
 <blockquote><b>Note</b>: To see how this works, deselect all points. Then
 type w to bring up the Point Statistics panel. At the bottom of this panel,
-you should see a greyed-out text string called “(none).” Left-click on
+you should see a greyed-out text string called "(none)." Left-click on
 this to select existing point groups from a drop-down list. In this case,
-select “Kara Eye.” Then left-click on the white plus sign next to “Kara
-Eye.” All points marked “Kara Eye” will now be selected!</blockquote>
+select "Kara Eye." Then left-click on the white plus sign next to "Kara
+Eye." All points marked "Kara Eye" will now be selected!</blockquote>
 
 <hr SIZE=1 WIDTH="100%">
 <p>Now for the mouth. Sometimes the points lining the inside edge of the
-mouth can be hardest to grab when modeling. Let’s mark them now, to make
+mouth can be hardest to grab when modeling. Let's mark them now, to make
 our job easier in the future.
 <p><b>STEP 9</b>: Deselect everything. Select the seven points that rim
 the inside of the mouth. Use Point Selection Sets to create a point set
-called “Kara Mouth (Inside Edge).” (<b><font color="#CC0000"><a href="Fig005.gif">Figure
+called "Kara Mouth (Inside Edge)." (<b><font color="#CC0000"><a href="Fig005.gif">Figure
 5</a></font></b>)
 <p><a href="Fig005.gif"><img SRC="small/s_Fig005.GIF" ALT="Figure 5" NOSAVE BORDER=1 height=151 width=200></a>
 <br><b>Figure 5</b>
 <p><b>STEP 10</b>: Deselect everything. Select all of the points of the
-lips – including the ones you had selected in the previous step. Use Point
-Selection Sets to create a point set called “Kara Lips (All).”
-<p>The points that rim the inside of the mouth now belong to both “Kara
-Mouth (Inside Edge)” and “Kara Lips (All),” proving that a point can belong
+lips -- including the ones you had selected in the previous step. Use Point
+Selection Sets to create a point set called "Kara Lips (All)."
+<p>The points that rim the inside of the mouth now belong to both "Kara
+Mouth (Inside Edge)" and "Kara Lips (All)," proving that a point can belong
 to as many groups as you like. Think of it as the point equivalent of joining
 a club. A high school student might belong to an art club and a science
-club – he is not forced to pick one over the other. His name will be listed
-on the rosters of both clubs. So, too, can a point belong to both “Kara
-Mouth (Inside Edge)” and “Kara Lips (All)” – it is not forced to pick one
+club -- he is not forced to pick one over the other. His name will be listed
+on the rosters of both clubs. So, too, can a point belong to both "Kara
+Mouth (Inside Edge)" and "Kara Lips (All)" -- it is not forced to pick one
 over the other. It can be listed on the rosters of both point groups.
 <p>
 <hr SIZE=1 WIDTH="100%">

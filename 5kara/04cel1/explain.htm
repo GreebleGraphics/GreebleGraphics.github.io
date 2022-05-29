@@ -12,26 +12,26 @@
 <h3>
 About Super Cel Shader</h3>
 It helps to know what Super Cel Shader can and cannot do. Super Cel Shader,
-like Edges, does not “think” about art or design. It may appear to “paint”
-a surface, but in reality it simplifies LightWave’s shading. Super Cel
-Shader reduces LightWave’s shading from the millions of shades possible
-to four shades or less, (with “blending” inbetween if specified).
-<p>This differs from “posterizing” in that it reduces everything to four
+like Edges, does not "think" about art or design. It may appear to "paint"
+a surface, but in reality it simplifies LightWave's shading. Super Cel
+Shader reduces LightWave's shading from the millions of shades possible
+to four shades or less, (with "blending" inbetween if specified).
+<p>This differs from "posterizing" in that it reduces everything to four
 shades of <i>lighting</i>, not four <i>colors</i>. You could have a color
 map of a rainbow gradient mapped to a surface, and every soft blend of
-color would show up when celshaded – its variety of colors untouched by
+color would show up when celshaded -- its variety of colors untouched by
 Super Cel Shader. However, the shading would be noticeably simplified,
 with colors abruptly switching to lighter or darker shades in areas receiving
 more or less light.
 <p>For each frame, Super Cel Shader looks at how much light each pixel
 receives, and marks it as one of four Zones. Each pixel in a given Zone
 renders as though it were lit with the exact same amount of light, with
-the amount of light specified by the “Brightness” of that given Zone.
-<p>The Super Cel Shader’s approach to “painting” affects not only the base
+the amount of light specified by the "Brightness" of that given Zone.
+<p>The Super Cel Shader's approach to "painting" affects not only the base
 color of a surface, but also the color maps applied to that surface. With
-color texture maps, then, one might recreate the star logo on Terry Bogard’s
-jacket in <i>Fatal Fury</i>, or Folken’s teardrop tattoo in <i>Escaflowne</i>,
-or the pattern for the magic carpet in Disney’s <i>Aladdin</i>.
+color texture maps, then, one might recreate the star logo on Terry Bogard's
+jacket in <i>Fatal Fury</i>, or Folken's teardrop tattoo in <i>Escaflowne</i>,
+or the pattern for the magic carpet in Disney's <i>Aladdin</i>.
 <p>The Super Cel Shader also respects the lights in a scene, helping one
 blend celshaded objects with non-celshaded objects. This respect for lighting
 gives one a chance to blend cartooning with photorealism, in the tradition
@@ -40,14 +40,14 @@ of <i>Who Framed Roger Rabbit</i>.
 affect the lighting of a surface. One can use bump maps to paint shading
 detail on a celshaded character <i>without</i> unwanted Edges (which would
 happen with geometry details). One can use a bump map to recreate the stylized
-tendons on the back of Sailor Moon’s hand, for example.
-<p>The Super Cel Shader’s respect for light also means a respect for diffuse
+tendons on the back of Sailor Moon's hand, for example.
+<p>The Super Cel Shader's respect for light also means a respect for diffuse
 settings and diffuse maps, which control how much light a surface can receive.
 One could thus use diffuse maps to paint shadows directly onto a character.
-With a diffuse map, a celshaded version of Will Eisner’s hero in <i>The
+With a diffuse map, a celshaded version of Will Eisner's hero in <i>The
 Spirit</i> can always have a mysterious, mask-like shadow about his eyes.
 <p>At first glance, the Super Cel Shader interface can confuse and intimidate
-most people with its many “mysterious” settings. (<b><font color="#CC0000"><a href="Fig001.gif">Figure
+most people with its many "mysterious" settings. (<b><font color="#CC0000"><a href="Fig001.gif">Figure
 1</a></font></b>) For now, though, just remember this: controlling the
 light will control the shading.
 <p><a href="Fig001.gif"><img SRC="small/s_Fig001.GIF" ALT="Figure 1" NOSAVE BORDER=1 height=285 width=200></a>

@@ -10,12 +10,12 @@
 <body text="#000000" bgcolor="#FFFFFF" link="#FF0000" vlink="#800080" alink="#0000FF">
 
 <h3>
-The Torso – Spline Cage (Pt. 3)</h3>
+The Torso -- Spline Cage (Pt. 3)</h3>
 The area bounded by the neck, shoulder, innermost arm spline circle, and
 breast-level spline ellipse poses a problem. This area is currently defined
-by six splines (six “sides”), instead of three or four.
-<p>Just as subdivision surfaces won’t accept anything other than three-
-and four-sided polygons, LightWave’s Spline Patch operation won’t accept
+by six splines (six "sides"), instead of three or four.
+<p>Just as subdivision surfaces won't accept anything other than three-
+and four-sided polygons, LightWave's Spline Patch operation won't accept
 anything other than three- and four-sided spline boundaries/patches. We
 must therefore add splines that break up this six-sided boundary into three-
 or four-sided boundaries.
@@ -33,10 +33,10 @@ number of quadrangles (four-sided shapes) and the fewest triangles:
 <br><b>Figure 26</b></blockquote>
 
 <hr SIZE=1 WIDTH="100%">
-<p><b>STEP 33</b>: In the Top view, select the “lowest” point of the neck
-circle and the “lowest” point of the innermost arm circle (<b><font color="#CC0000"><a href="Fig027.gif">Figure
-27</a></font></b>). Type Ctrl-p to create a spline. Then select the “topmost”
-point of the neck circle and the the “topmost” point of the innermost arm
+<p><b>STEP 33</b>: In the Top view, select the "lowest" point of the neck
+circle and the "lowest" point of the innermost arm circle (<b><font color="#CC0000"><a href="Fig027.gif">Figure
+27</a></font></b>). Type Ctrl-p to create a spline. Then select the "topmost"
+point of the neck circle and the the "topmost" point of the innermost arm
 circle (<b><font color="#CC0000"><a href="Fig028.gif">Figure 28</a></font></b>),
 and type Ctrl-p to create a spline.
 <br>&nbsp;
@@ -50,12 +50,12 @@ and type Ctrl-p to create a spline.
 </tr>
 </table>
 
-<p>Almost there, but some of the splines don’t quite match the black lines
-of the model sheet. We’ll fix that in the next step.
+<p>Almost there, but some of the splines don't quite match the black lines
+of the model sheet. We'll fix that in the next step.
 <p><b>STEP 34</b>: In Points Selection Mode, deselect all points. Go to
 Polygon Selection Mode. In the Back view, select the spline that joins
 the lowest points of the arm circles. Activate the Add Points tool (if
-you have not yet added a hotkey for this, you’ll find it in <b>Polygon
+you have not yet added a hotkey for this, you'll find it in <b>Polygon
 > Revise > Add Points</b>). In the Back view, left-click on the center
 of the spline. A new point should be added to the center of the spline.
 <b><font color="#CC0000"><a href="Fig029.gif">Figure
@@ -73,7 +73,7 @@ the Drag tool (Ctrl-t).
 6.5a. If Add Points places the new point too close to another point, you
 may not be able to Drag the new point without also dragging the other point.
 If the new point lies too close to another point, type u (Undo) until the
-new point disappears and try Add Points again – this time clicking on a
+new point disappears and try Add Points again -- this time clicking on a
 <i>slightly</i> different area of the spline.
 <p>This bug does not appear in LightWave 6.5b or LightWave 7. (LightWave
 6.5a users, take heart -- both you and LightWave 6 users can download the
@@ -86,7 +86,7 @@ torso. (<b><font color="#CC0000"><a href="Fig030.gif">Figure 30</a></font></b>)
 Right now it is made up of three points, giving it two sections. Add a
 point to the middle of each section using Add Points. Use the Drag tool
 to move each of these new points until the spline matches the shape of
-the black line defining the torso’s left side in the model sheet.
+the black line defining the torso's left side in the model sheet.
 <br>&nbsp;
 <table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
 <tr>
@@ -105,20 +105,20 @@ tool to move each new point until the spline follows the shape of the black
 line defining the shoulder.
 <p>
 <hr SIZE=1 WIDTH="100%">
-<blockquote><b>Tip</b>: In this tutorial, don’t worry if the shoulder spline
+<blockquote><b>Tip</b>: In this tutorial, don't worry if the shoulder spline
 does not perfectly match the drawing. (<b><font color="#CC0000"><a href="Fig031.gif">Figure
 31</a></font></b>) Pay closer attention to the arcs that each of the splines
 make in 3D space. The smoother and more rounded the arcs, the better the
 model will look when finished. You can always tweak the spline cage after
-it’s finished.</blockquote>
+it's finished.</blockquote>
 
 <hr SIZE=1 WIDTH="100%">
 <p><b>STEP 37</b>: Select the other two splines that connect the neck circle
 to the arm circle. (<b><font color="#CC0000"><a href="Fig032.gif">Figure
 32</a></font></b>) To leave both of them perfectly straight would mean
-two odd “creases” in the model’s shoulders, because you would have two
+two odd "creases" in the model's shoulders, because you would have two
 straight rows of points in the middle of curved rows of points. These two
-splines need to “go with the flow.” Add a point to the center of each spline
+splines need to "go with the flow." Add a point to the center of each spline
 using Add Points. In the Back View, use the Drag tool to drag the new points
 downwards, until the curve of these splines complements the downward curve
 of the shoulder spline.
@@ -157,17 +157,17 @@ sheet.
 <p>
 <hr SIZE=1 WIDTH="100%">
 <blockquote><b>Tip</b>: Because this tutorial will later have you patching
-this spline cage with 2-by-2 patches, having more than one “tweak point”
+this spline cage with 2-by-2 patches, having more than one "tweak point"
 per section of spline will not matter.</blockquote>
 
 <hr SIZE=1 WIDTH="100%">
 <p><b>STEP 41</b>: Now for the neck. She could use a longer neck. Deselect
 all splines, then select the four splines that form the neck circle. Type
-c to Copy this geometry. Just so that it won’t accidentally get pasted
+c to Copy this geometry. Just so that it won't accidentally get pasted
 on top of the original, go to an empty layer. Then type v to Paste a copy
 of the neck circle. Type t to bring up the Move tool. In the Right View,
 move the copy of the neck circle up and to the left until it lies inside
-the top of the model’s neck. (<b><font color="#CC0000"><a href="Fig035.gif">Figure
+the top of the model's neck. (<b><font color="#CC0000"><a href="Fig035.gif">Figure
 35</a></font></b>) Then type x to Cut the geometry out of this layer. Go
 to the original layer, and type v to Paste it.
 <br>&nbsp;
@@ -182,14 +182,14 @@ to the original layer, and type v to Paste it.
 </table>
 
 <p><b>STEP 42</b>: Now to connect this neck to the rest of the cage with
-splines. Enter Points Selection Mode. In the Right View select the “leftmost”
+splines. Enter Points Selection Mode. In the Right View select the "leftmost"
 point of each neck circle, and type Ctrl-p to create a spline. (<b><font color="#CC0000"><a href="Fig036.gif">Figure
-36</a></font></b>) Then select the “rightmost” point of each neck circle,
+36</a></font></b>) Then select the "rightmost" point of each neck circle,
 and type Ctrl-p to create a spline. Finally, in the Back View, select the
-“rightmost” points of each neck circle, and type Ctrl-p to create a spline.
-<p><b>STEP 43</b>: That’s it. You’re done with the upper torso! Save this
-object as <b>torso03.lwo</b> (using “Save Object As” in the File menu,
-of course). …now you just need to build the hip section.
+"rightmost" points of each neck circle, and type Ctrl-p to create a spline.
+<p><b>STEP 43</b>: That's it. You're done with the upper torso! Save this
+object as <b>torso03.lwo</b> (using "Save Object As" in the File menu,
+of course). ...now you just need to build the hip section.
 <br>&nbsp;
 <br>&nbsp;
 <table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=3 >

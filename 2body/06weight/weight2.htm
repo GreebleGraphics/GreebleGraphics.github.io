@@ -10,26 +10,26 @@
 <body text="#000000" bgcolor="#FFFFFF" link="#FF0000" vlink="#800080" alink="#0000FF">
 
 <h3>
-The Torso – More Weight Maps</h3>
+The Torso -- More Weight Maps</h3>
 <b>STEP 1</b>: Load <b>torso09.lwo</b> into Modeler (if you did not follow
 the previous tutorial sections and just want to practice Weight Map editing,
 you may load <b>torso09.lwo</b> off the CD-ROM). Go to the layer that contains
 the left half of the torso.
-<p><b>STEP 2</b>: Set the Perspective View’s display type to Weight Shade.
+<p><b>STEP 2</b>: Set the Perspective View's display type to Weight Shade.
 <p><b>STEP 3</b>: Of the W, T, and M buttons in the lower-right hand corner
 of the screen, make sure that W is highlighted.
 <p><b>STEP 4</b>: From the drop-down list next to the W, T, and M buttons,
-select “Hips” to make it the current weight map. As expected, the geometry
+select "Hips" to make it the current weight map. As expected, the geometry
 extruded from the Hip section carried the weighting of the Hips map along
 with it.
 <p><b>STEP 5</b>: No problem. In the Back View, lasso all of the points
 of the leg that lie below the crotch. Go to <b>Map > General > More > Set
 Vertex Map Value</b>. Choose 0.0% for Value 1 and click on OK. The red
-highlights of the “Hips” weight map should no longer cover the geometry
+highlights of the "Hips" weight map should no longer cover the geometry
 of the leg.
-<p>As for the leg, we’re going to divide it between two weight maps – the
-“Left Leg” weight map and a new “Left Shin” weight map.
-<p><b>STEP 6</b>: Make the “Left Leg” weight map the current weight map.
+<p>As for the leg, we're going to divide it between two weight maps -- the
+"Left Leg" weight map and a new "Left Shin" weight map.
+<p><b>STEP 6</b>: Make the "Left Leg" weight map the current weight map.
 Select all the polygons below the center points of the knee that do not
 share the center points of the knee. Use Set Vertex Map Value to set the
 value of the points that make up these polygons to 0.0%. (<b><font color="#CC0000"><a href="Fig001.gif">Figure
@@ -45,24 +45,24 @@ value of the points that make up these polygons to 0.0%. (<b><font color="#CC000
 </tr>
 </table>
 
-<p><b>STEP 7</b>: With these polygons still selected, select “(new)” from
+<p><b>STEP 7</b>: With these polygons still selected, select "(new)" from
 the drop-down list nex to the W, T, and M buttons to create a new weight
-map. Call the new map “Left Shin” and set the Initial Value of the selected
+map. Call the new map "Left Shin" and set the Initial Value of the selected
 geometry to 100.0%. (<b><font color="#CC0000"><a href="Fig002.gif">Figure
 2</a></font></b>)
 <p>
 <hr SIZE=0 WIDTH="100%">
 <blockquote><b>Note</b>: Unlike the shoulder joint, the weight maps near
 this joint do not overlap. This is intentional, as we will use a LightWave
-feature called “Joint Compensation for Parent” on the shin bone in Layout.
-This feature will be affected by the parent’s weight map – in this case,
-“Left Leg” – not the child’s weight map. We’ll see what happens when the
+feature called "Joint Compensation for Parent" on the shin bone in Layout.
+This feature will be affected by the parent's weight map -- in this case,
+"Left Leg" -- not the child's weight map. We'll see what happens when the
 parent gets these points all to itself.</blockquote>
 
 <hr SIZE=1 WIDTH="100%">
-<p>That’s it for the leg weight maps at this time. Now we will split the
+<p>That's it for the leg weight maps at this time. Now we will split the
 arm between two weight maps as well.
-<p><b>STEP 8</b>: Deselect everything. Make the “Left Arm” weight map the
+<p><b>STEP 8</b>: Deselect everything. Make the "Left Arm" weight map the
 current weight map. In the Back View, select the three outermost rows of
 polygons. Use Set Vertex Map Value to assign values of 0.0% to this selected
 geometry. It should look like <b><font color="#CC0000"><a href="Fig003.gif">Figure
@@ -79,7 +79,7 @@ geometry. It should look like <b><font color="#CC0000"><a href="Fig003.gif">Figu
 </table>
 
 <p><b>STEP 9</b>: With these polygons still selected, create a new weight
-map called “Left Forearm” and set the Initial Value of the selected geometry
+map called "Left Forearm" and set the Initial Value of the selected geometry
 to 100.0%. It should look like <b><font color="#CC0000"><a href="Fig004.gif">Figure
 4</a></font></b>.
 <p><b>STEP 10</b>: Save this object as <b>torso10.lwo</b>.

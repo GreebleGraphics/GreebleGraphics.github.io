@@ -10,10 +10,10 @@
 <body text="#000000" bgcolor="#FFFFFF" link="#FF0000" vlink="#800080" alink="#0000FF">
 
 <h3>
-The Torso – Hand Construction (Pt. 2)</h3>
+The Torso -- Hand Construction (Pt. 2)</h3>
 <b>STEP 23</b>: In the Top View, use the Knife tool to make three cuts
-across the center of the thumb – one for the joint of the thumb, and one
-on either side of that “joint” cut to help the thumb keep its volume when
+across the center of the thumb -- one for the joint of the thumb, and one
+on either side of that "joint" cut to help the thumb keep its volume when
 bent. (<b><font color="#CC0000"><a href="Fig014.gif">Figure 14</a></font></b>)
 <br>&nbsp;
 <table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="500" >
@@ -27,11 +27,11 @@ bent. (<b><font color="#CC0000"><a href="Fig014.gif">Figure 14</a></font></b>)
 </table>
 
 <p><b>STEP 24</b>: One last weight map. Deselect everything, then select
-the polygons that form the palm. Create a weight map called “Left Hand”
+the polygons that form the palm. Create a weight map called "Left Hand"
 with an Initial Value of 100.0%. It should look like <b><font color="#CC0000"><a href="Fig015.gif">Figure
 15</a></font></b>.
-<p><b>STEP 25</b>: Let’s see how this looks as a SubPatch cage. Deselect
-everything and hit the Tab key. We’ve already created our weight maps,
+<p><b>STEP 25</b>: Let's see how this looks as a SubPatch cage. Deselect
+everything and hit the Tab key. We've already created our weight maps,
 so set the Perspective View display type to Wireframe Shade. (<b><font color="#CC0000"><a href="Fig016.gif">Figure
 16</a></font></b>)
 <br>&nbsp;
@@ -46,10 +46,10 @@ so set the Perspective View display type to Wireframe Shade. (<b><font color="#C
 </table>
 
 <p><b>STEP 26</b>: Before we distort this cage further, we ought to surface
-it while it’s still easy to select surfaces. With everything deselected,
+it while it's still easy to select surfaces. With everything deselected,
 type q to bring up the Change Surface&nbsp; dialog box. In the Name box,
-type “Kara Glove.” Leave the “Set Initial Color” box checked, and check
-the “Smoothing” checkbox. Double-click on the gray box to the right of
+type "Kara Glove." Leave the "Set Initial Color" box checked, and check
+the "Smoothing" checkbox. Double-click on the gray box to the right of
 the Color values to set a specific color, and set the Color to a brown
 color for now (such as RGB 128 064 000). (<b><font color="#CC0000"><a href="Fig017.gif">Figure
 17</a></font></b>) Click on OK to apply this surface to the entire hand
@@ -57,7 +57,7 @@ object.
 <p><b>STEP 27</b>: The model sheet shows the character wearing fingerless
 gloves. Select the SubPatches shown in <b><font color="#CC0000"><a href="Fig018.gif">Figure
 18</a></font></b>, type q to activate the Change Surface dialog box, and
-assign a surface called “Kara Skin,” with Smoothing turned on and Color
+assign a surface called "Kara Skin," with Smoothing turned on and Color
 values that resemble pale skin for now (such as RGB 204 183 167). (<b><font color="#CC0000"><a href="Fig018.gif">Figure
 18</a></font></b>)
 <br>&nbsp;
@@ -73,11 +73,11 @@ values that resemble pale skin for now (such as RGB 204 183 167). (<b><font colo
 
 <p><b>STEP 28</b>: The model sheet also shows trim on the fingerless gloves.
 Deselect everything, select the SubPatches shown in <b><font color="#CC0000"><a href="Fig019.gif">Figure
-19</a></font></b>, and assign a surface called “Kara Glove Trim.” Make
-this surface’s Color yellow for now, (such as RGB 220 160 000), with Smoothing
+19</a></font></b>, and assign a surface called "Kara Glove Trim." Make
+this surface's Color yellow for now, (such as RGB 220 160 000), with Smoothing
 turned on.
 <p><b>STEP 29</b>: Time to distort this object into more of a hand shape.
-First, the fingertips should have more of a “slant” at their bottoms. Deselect
+First, the fingertips should have more of a "slant" at their bottoms. Deselect
 everything. In the Back View, select the points at the bottom of the fingertips.
 Move these points towards the palm until the finger tips have more of a
 taper, as seen in <b><font color="#CC0000"><a href="Fig020.gif">Figure
@@ -103,23 +103,23 @@ until it looks like <b><font color="#CC0000"><a href="Fig022.gif">Figure
 22</a></font></b>.
 <p><a href="Fig022.gif"><img SRC="small/s_Fig022.GIF" ALT="Figure 22" NOSAVE BORDER=1 height=160 width=200></a>
 <br><b>Figure 22</b>
-<p>The index and pinky fingers ought to have room to “spread out” when
+<p>The index and pinky fingers ought to have room to "spread out" when
 rotated by their bones. Right now, however, their weight maps currently
 have no control over any of the points of the palm. When the fingers spread
-out right now, there’s a risk of “crimping” happening at the outer edges
+out right now, there's a risk of "crimping" happening at the outer edges
 of the pinky and index fingers (since the palm points, unaffected by the
 index and pinky bones, will remain fixed as the points of the index and
 pinky rotate past them).
 <p>We could give the weight maps of the pinky and index fingers co-ownership
 of these points, but that might cause problems, too, as the outer points
-might then rotate into the palm as the fingers spread out. (They wouldn’t
+might then rotate into the palm as the fingers spread out. (They wouldn't
 rotate as much as the finger points, since the palm bones, having co-ownership,
-would fight to keep them fixed…but they would probably still rotate inwards,
+would fight to keep them fixed...but they would probably still rotate inwards,
 slightly).
-<p>Let’s see how far we can get by just moving the four closest palm points
+<p>Let's see how far we can get by just moving the four closest palm points
 out of the way. Instead of giving the index and pinky fingers co-ownership
-of the palm points, we’ll just give the index and pinky what they truly
-need – some “breathing room.”
+of the palm points, we'll just give the index and pinky what they truly
+need -- some "breathing room."
 <p><b>STEP 32</b>: Deselect everything. Select the points shown in the
 first panel of <b><font color="#CC0000"><a href="Fig023.gif">Figure 23</a></font></b>,
 and Move them towards the wrist. Pay attention to the SubPatch lines connecting
@@ -144,7 +144,7 @@ Top View, select the points shown in <b><font color="#CC0000"><a href="Fig024.gi
 24</a></font></b> and Move them inwards, to give the thumb more of a taper.
 <p>This thumb ought to hang down at a 30-degree angle, but Rotating it
 to that angle in the Top, Back, or Right Views would be difficult. Happily,
-we can use Modeler’s tools in the Perspective View.
+we can use Modeler's tools in the Perspective View.
 <p><b>STEP 34</b>: Select the polygons of the thumb. Rotate the Perspective
 View until the selected edges of the sides the thumb line up with each
 other. When they do, chances are good that the sides of the root of the
